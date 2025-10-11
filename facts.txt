@@ -1,0 +1,18 @@
+Customer 101 is named Alice and lives in Seattle.
+Customer 102 is named Bob and lives in Denver.
+Customer 103 is named Carol and lives in Boston.
+Order 501 belongs to customer 101 and totals $250.00.
+Order 502 belongs to customer 101 and totals $120.50.
+Order 503 belongs to customer 102 and totals $400.00.
+Order 504 belongs to customer 103 and totals $50.00.
+Order 505 belongs to customer 103 and totals $75.00.
+Warehouse 1 is located in Seattle.
+Warehouse 2 is located in Denver.
+Order 501 was shipped from warehouse 1.
+Order 502 was shipped from warehouse 1.
+Order 503 was shipped from warehouse 2.
+Order 504 was shipped from warehouse 1.
+Order 505 was shipped from warehouse 1.
+Customer 104 is named Dave and lives in Chicago.
+Order 506 belongs to customer 104 and totals $300.00.
+Order 506 was shipped from warehouse 2.
