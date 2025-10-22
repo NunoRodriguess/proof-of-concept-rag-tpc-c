@@ -26,9 +26,10 @@ def load_eval_data(path: str):
     return data
 
 
-def build_index(facts, embedder):
-    print(f"Encoding {len(facts)} facts...")
-    embeddings = embedder.encode(facts, normalize_embeddings=True, show_progress_bar=True)
+def build_index(facts, embedder, embeddings=None):
+    if embeddings is None:
+        print(f"Encoding {len(facts)} facts...")
+        embeddings = embedder.encode(facts, normalize_embeddings=True, show_progress_bar=True)
     dim = embeddings.shape[1]
     index = faiss.IndexFlatIP(dim)
     index.add(embeddings)
@@ -43,18 +44,22 @@ def retrieve(query, embedder, index, facts, top_k=5):
 
 def build_prompt(question, retrieved_facts):
     context = "\n".join(retrieved_facts)
-    return f"""You are a database assistant.
-Use the following facts to answer the question concisely.
-If a numeric value or ID is requested, return only the number.
-
-Facts:
+    return f"""  
+You are a database assistant capable of answering business questions in regard to TPC-H.
+You are provided with the following facts.
+You must answer the question based only on the provided facts.
+You must follow the rules:
+- If a numeric value or ID is requested, return only the number.
+- Return no additional text beyond the answer.
+- Dont return SQL queries. 
+== Facts == 
 {context}
+== Question ==
+{question}
+"""
 
-Question: {question}
-Answer:"""
 
-
-def run_eval(facts_file, eval_file, model_name):
+def run_eval(facts_file, eval_file, model_name, save_embeddings=None, load_embeddings=None):
     # --- Load data ---
     facts = load_facts(facts_file)
     eval_data = load_eval_data(eval_file)
@@ -62,8 +67,16 @@ def run_eval(facts_file, eval_file, model_name):
     # --- Embedding model ---
     embedder = SentenceTransformer("BAAI/bge-small-en-v1.5")
 
-    # --- Build FAISS index ---
-    index, _ = build_index(facts, embedder)
+    # --- Load or build embeddings ---
+    if load_embeddings:
+        print(f"Loading embeddings from {load_embeddings}")
+        embeddings = np.load(load_embeddings)
+        index, _ = build_index(facts, embedder, embeddings=embeddings)
+    else:
+        index, embeddings = build_index(facts, embedder)
+        if save_embeddings:
+            print(f"Saving embeddings to {save_embeddings}")
+            np.save(save_embeddings, embeddings)
 
     # --- Load LLM ---
     print(f"Loading LLM: {model_name}")
@@ -71,9 +84,9 @@ def run_eval(facts_file, eval_file, model_name):
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         device_map="auto",
-        torch_dtype="auto"
+        dtype="auto"
     )
-    llm = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=200)
+    llm = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=50, return_full_text=False)
 
     # --- Evaluate ---
     correct = 0
@@ -85,7 +98,7 @@ def run_eval(facts_file, eval_file, model_name):
         question = item["question"]
         gold = str(item["answer"]).strip()
 
-        retrieved = retrieve(question, embedder, index, facts)
+        retrieved = retrieve(question, embedder, index, facts, len(facts))
         prompt = build_prompt(question, retrieved)
 
         response = llm(prompt)[0]["generated_text"]
@@ -115,7 +128,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--facts", type=str, required=True, help="Path to facts.txt")
     parser.add_argument("--eval", type=str, required=True, help="Path to eval.jsonl")
-    parser.add_argument("--model", type=str, default="Qwen/Qwen2.5-7B-Instruct", help="LLM model name")
+    parser.add_argument("--model", type=str, default="Qwen/Qwen2.5-3B-Instruct", help="LLM model name")
+    parser.add_argument("--save-embeddings", type=str, default=None, help="Path to save embeddings (npy)")
+    parser.add_argument("--load-embeddings", type=str, default=None, help="Path to load embeddings (npy)")
     args = parser.parse_args()
 
-    run_eval(args.facts, args.eval, args.model)
+    run_eval(args.facts, args.eval, args.model, save_embeddings=args.save_embeddings, load_embeddings=args.load_embeddings)
