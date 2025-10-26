@@ -1,8 +1,1 @@
-{"question": "Who lives in Denver?", "gold": "102", "predicted": "Bob and Alice live in Denver. Based on the given facts, both Customer 102 (Bob) and Customer 101 (Alice) live in Denver. Since the question asks for who lives in Denver, we should provide their names as the answer. Therefore, the answer is \"Bob and Alice\"."}
-{"question": "What is the largest order total?", "gold": "400.00", "predicted": "$300.00 To find the largest order total, we need to compare all given orders' totals:"}
-{"question": "How much has customer 101 spent in total?", "gold": "370.50", "predicted": "$270.50"}
-{"question": "Which warehouse shipped order 504?", "gold": "1", "predicted": "Warehouse 1. Based on the given information, Order 504 was shipped from warehouse 1. There is no other specific information provided about which warehouse shipped this particular order. Therefore, we can conclude that the correct answer is Warehouse 1."}
-{"question": "Which customers live in Seattle?", "gold": "101", "predicted": "Alice, Bob"}
-{"question": "Which warehouse is located in Denver?", "gold": "2", "predicted": "Customer 102 lives in Denver."}
-{"question": "What is the smallest order total?", "gold": "50.00", "predicted": "$50.00 To answer this question, we need to find the lowest amount among all orders. The smallest order total given in the information provided is $50.00, which corresponds to Order 504 belonging to customer 103. Since it's mentioned that this order totals exactly $50.00, there isn't any smaller total for an order according to the facts presented. Therefore, the smallest order total is $50.00."}
-{"question": "What is total spent by the customers?", "gold": "1195.00", "predicted": "The total amount spent by all customers is $980.50. To determine this, we add up the individual totals of each order:"}
+{"question": "How many nations are there?", "gold": "25", "predicted": ""}

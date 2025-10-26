@@ -118,7 +118,7 @@ def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, l
         question = item["question"]
         gold = str(item["answer"]).strip()
 
-        retrieved = retrieve(question, embedder, index, facts, 1000)
+        retrieved = retrieve(question, embedder, index, facts, len(facts))
         prompt = build_prompt(question, retrieved)
 
         try:
