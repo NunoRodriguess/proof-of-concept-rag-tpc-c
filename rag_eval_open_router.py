@@ -69,7 +69,9 @@ def call_openrouter(prompt, model_name, api_key, max_tokens=50):
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
-    
+    print(f"length of prompt in tokens: {len(prompt.split())}")
+    print(f"calling OpenRouter with model: {model_name}")
+    print(f"prompt: {prompt}")
     data = {
         "model": model_name,
         "messages": [
@@ -116,7 +118,7 @@ def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, l
         question = item["question"]
         gold = str(item["answer"]).strip()
 
-        retrieved = retrieve(question, embedder, index, facts, len(facts))
+        retrieved = retrieve(question, embedder, index, facts, 1000)
         prompt = build_prompt(question, retrieved)
 
         try:
@@ -151,7 +153,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--facts", type=str, required=True, help="Path to facts.txt")
     parser.add_argument("--eval", type=str, required=True, help="Path to eval.jsonl")
-    parser.add_argument("--model", type=str, default="deepseek/deepseek-r1:free", help="OpenRouter model name")
+    parser.add_argument("--model", type=str, default="qwen/qwen3-235b-a22b:free", help="OpenRouter model name")
     parser.add_argument("--api-key", type=str, default=None, help="OpenRouter API key (or set OPENROUTER_API_KEY env var)")
     parser.add_argument("--save-embeddings", type=str, default=None, help="Path to save embeddings (npy)")
     parser.add_argument("--load-embeddings", type=str, default=None, help="Path to load embeddings (npy)")

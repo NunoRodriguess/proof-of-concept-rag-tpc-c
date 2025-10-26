@@ -91,46 +91,69 @@ class TPCHFactConverter:
         return facts
     
     def convert_all(self, max_rows_per_table=None):
-        """Convert all TPC-H .tbl files to facts"""
+        """Convert all TPC-H .tbl files to facts (and optionally make truncated .tbt copies)."""
         all_facts = []
-        
-        # Process each table
+
         for table_name in self.schemas.keys():
             tbl_file = self.input_dir / f"{table_name}.tbl"
-            
+
             if not tbl_file.exists():
                 print(f"Warning: {tbl_file} not found, skipping...")
                 continue
-            
+
             print(f"Processing {table_name}.tbl...")
-            facts = self.convert_file(tbl_file, table_name)
-            
+            facts = []
+            raw_lines = []
+
+            try:
+                with open(tbl_file, 'r', encoding='utf-8', errors='ignore') as f:
+                    for line_num, line in enumerate(f, 1):
+                        if line.strip():
+                            values = self.parse_tbl_line(line)
+                            fact = self.create_fact(table_name, values)
+                            if fact:
+                                facts.append(fact)
+                                raw_lines.append(line.strip())
+
+                        # Stop early if we reach the row limit
+                        if max_rows_per_table and len(facts) >= max_rows_per_table:
+                            break
+            except Exception as e:
+                print(f"Error processing {tbl_file}: {e}")
+                continue
+
+            # Save truncated .tbt file if limit is active
             if max_rows_per_table:
-                facts = facts[:max_rows_per_table]
-            
+                tbt_file = self.input_dir / f"{table_name}.tbt"
+                try:
+                    with open(tbt_file, 'w', encoding='utf-8') as out_tbt:
+                        out_tbt.write('\n'.join(raw_lines) + '\n')
+                    print(f"  Wrote truncated file: {tbt_file} ({len(raw_lines)} rows)")
+                except Exception as e:
+                    print(f"  Error writing {tbt_file}: {e}")
+
             all_facts.append(f"\n{'='*80}")
             all_facts.append(f"TABLE: {table_name.upper()}")
             all_facts.append(f"{'='*80}\n")
             all_facts.extend(facts)
-            
+
             print(f"  Converted {len(facts)} rows")
-        
+
         # Write all facts to output file
         with open(self.output_file, 'w', encoding='utf-8') as f:
             f.write('\n'.join(all_facts))
-        
+
         print(f"\nAll facts written to {self.output_file}")
         print(f"Total facts: {len([f for f in all_facts if not f.startswith('=') and f.strip()])}")
-
-
+        
 # Example usage
 if __name__ == "__main__":
     # Configure your paths
     INPUT_DIR = "./out"  # Directory containing .tbl files
-    OUTPUT_FILE = "tpch_facts.txt"
+    OUTPUT_FILE = "tpch_facts_small.txt"
     
     # Optional: limit rows per table for testing (None = all rows)
-    MAX_ROWS = None  # Set to e.g., 100 for testing
+    MAX_ROWS = 10000  # Set to e.g., 100 for testing
     
     converter = TPCHFactConverter(INPUT_DIR, OUTPUT_FILE)
     converter.convert_all(max_rows_per_table=MAX_ROWS)
