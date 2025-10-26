@@ -9,5 +9,5 @@ This is a simple implementation of RAG using Sentence Transformers for embedding
 ## TODO:
 
 - [x] Add more data to the training
-- [x] Use TPC-C data.
+- [x] Use TPC-H data.
 - [x] Test with other base models (e.g., Llama, Mistral).
