@@ -14,7 +14,7 @@ from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 import requests
 from dotenv import load_dotenv
-
+from time import sleep
 
 def load_facts(path: str):
     with open(path, "r", encoding="utf-8") as f:
@@ -51,9 +51,8 @@ You are a database assistant capable of answering business questions in regard t
 You are provided with the following facts.
 You must answer the question based only on the provided facts.
 You must follow the rules:
-- If a numeric value or ID is requested, return only the number.
-- Return no additional text beyond the answer.
-- Dont return SQL queries. 
+- Don't return SQL queries.
+- Return the results in a table format with each value being separated with a whitespace character 
 == Facts == 
 {context}
 == Question ==
@@ -69,9 +68,9 @@ def call_openrouter(prompt, model_name, api_key, max_tokens=50):
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
-    print(f"length of prompt in tokens: {len(prompt.split())}")
-    print(f"calling OpenRouter with model: {model_name}")
-    print(f"prompt: {prompt}")
+    #print(f"length of prompt in tokens: {len(prompt.split())}")
+    #print(f"calling OpenRouter with model: {model_name}")
+    #print(f"prompt: {prompt}")
     data = {
         "model": model_name,
         "messages": [
@@ -88,7 +87,7 @@ def call_openrouter(prompt, model_name, api_key, max_tokens=50):
     return result["choices"][0]["message"]["content"]
 
 
-def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, load_embeddings=None):
+def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, load_embeddings=None, file_results="rag_results.jsonl", dump_prompts=None):
     # --- Load data ---
     facts = load_facts(facts_file)
     eval_data = load_eval_data(eval_file)
@@ -107,6 +106,11 @@ def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, l
             print(f"Saving embeddings to {save_embeddings}")
             np.save(save_embeddings, embeddings)
 
+    # Optional prompt dump file
+    prompt_f = None
+    if dump_prompts:
+        prompt_f = open(dump_prompts, "w", encoding="utf-8")
+
     # --- Evaluate ---
     correct = 0
     results = []
@@ -115,14 +119,21 @@ def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, l
     print("Running evaluation...\n")
 
     for item in tqdm(eval_data):
+        sleep(10)
         question = item["question"]
         gold = str(item["answer"]).strip()
 
-        retrieved = retrieve(question, embedder, index, facts, len(facts))
+        retrieved = retrieve(question, embedder, index, facts, 500)
         prompt = build_prompt(question, retrieved)
 
+        # Write prompt to file if enabled
+        if prompt_f:
+            prompt_f.write("==== PROMPT START ====\n")
+            prompt_f.write(prompt)
+            prompt_f.write("\n==== PROMPT END ====\n\n")
+
         try:
-            response = call_openrouter(prompt, model_name, api_key)
+            response = call_openrouter(prompt, model_name, api_key, 4000)
             # Extract only the part after "Answer:" if present
             answer = response.split("Answer:")[-1].strip().split("\n")[0]
         except Exception as e:
@@ -143,10 +154,14 @@ def run_eval(facts_file, eval_file, model_name, api_key, save_embeddings=None, l
     print(f"\n✅ Accuracy: {acc:.2%} ({correct}/{len(eval_data)})")
 
     # Optionally write results
-    with open("rag_results.jsonl", "w", encoding="utf-8") as out:
+    with open(file_results, "w", encoding="utf-8") as out:
         for r in results:
             out.write(json.dumps(r, ensure_ascii=False) + "\n")
     print("Results written to rag_results.jsonl")
+
+    # Close prompt dump file if used
+    if prompt_f:
+        prompt_f.close()
 
 
 if __name__ == "__main__":
@@ -157,6 +172,8 @@ if __name__ == "__main__":
     parser.add_argument("--api-key", type=str, default=None, help="OpenRouter API key (or set OPENROUTER_API_KEY env var)")
     parser.add_argument("--save-embeddings", type=str, default=None, help="Path to save embeddings (npy)")
     parser.add_argument("--load-embeddings", type=str, default=None, help="Path to load embeddings (npy)")
+    parser.add_argument("--file", type=str, default=None, help="Path to results")
+    parser.add_argument("--dump-prompts", type=str, default=None, help="Write all prompts to this file")
     args = parser.parse_args()
 
     # Get API key from args or environment variable
@@ -166,4 +183,4 @@ if __name__ == "__main__":
         raise ValueError("API key required. Use --api-key or set OPENROUTER_API_KEY environment variable")
 
     run_eval(args.facts, args.eval, args.model, api_key, 
-             save_embeddings=args.save_embeddings, load_embeddings=args.load_embeddings)
+             save_embeddings=args.save_embeddings, load_embeddings=args.load_embeddings,file_results=args.file, dump_prompts=args.dump_prompts)
