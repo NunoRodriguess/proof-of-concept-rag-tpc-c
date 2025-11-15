@@ -1,0 +1,1334 @@
+Item 1:
+Gold: l-returnflag l-linestatus sum-qty sum-base-price sum-disc-price sum-charge avg-qty avg-price avg-disc count-order A F 61294.00 92372128.47 87730657.4915 91167579.014230 25.1824157764995892 37950.751220213640 0.05058751027115858669 2434 N F 1852.00 2839903.89 2719994.3983 2822487.704927 26.4571428571428571 40570.055571428571 0.04742857142857142857 70 N O 127302.00 191175107.05 181699205.5336 189052697.648835 25.7279708973322555 38636.844593775263 0.05019199676637025061 4948 R F 62210.00 92360718.95 87743746.4855 91300507.640377 25.7598343685300207 38244.604120082816 0.04997929606625258799 2415
+Predicted: RETURNFLAG LINESTATUS COUNT_ITEM TOTAL_EXTENDEDPRICE TOTAL_DISCOUNTED_PRICE TOTAL_CHARGE AVG_QUANTITY AVG_EXTENDEDPRICE AVG_DISCOUNT N O 15 420559.47 395325.90 409128.92 24.40 28037.30 0.06 N F 1 69030.36 64888.54 64888.54 42.00 69030.36 0.03 R F 2 13671.46 12304.31 12748.47 24.50 6835.73 0.10
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0930
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=0.50, score=1.0
+  Column 1: type=string, coverage=0.50, score=5.0
+  Column 2: type=numeric, coverage=0.50, score=211151.00499999998
+  Column 3: type=numeric, coverage=0.50, score=47375908.95999999
+  Column 4: type=numeric, coverage=0.50, score=45020740.484900005
+  Column 5: type=numeric, coverage=0.50, score=46960505.979578495
+  Column 6: type=numeric, coverage=0.50, score=14019.272363540322
+  Column 7: type=numeric, coverage=0.50, score=None
+  Column 8: type=numeric, coverage=0.50, score=None
+  Column 9: type=numeric, coverage=0.50, score=None
+
+Item 2:
+Gold: s-acctbal s-name n-name p-partkey p-mfgr s-address s-phone s-comment 7841.05 Supplier#000005954 INDONESIA 953 Manufacturer#4 wOwcbbHNV2p,Glt8SijFnE9ZLcTbnhESeLvyFN 19-145-589-1532 fully regular foxes nag carefully! even ideas cajole permanently special deposits. carefull 7550.40 Supplier#000000776 VIETNAM 775 Manufacturer#1 nklfFoSkCwf,ooSuF 31-317-593-4029 es haggle instructions. bravely furious deposits haggle blithely. quickly regular water 7325.13 Supplier#000007934 INDONESIA 433 Manufacturer#1 V4mz6vAwVGH6j3izJ,dw8DnqWu3FN 19-825-315-2126 furiously unusual courts u 7035.97 Supplier#000005017 INDIA 16 Manufacturer#3 RMaCRF8C,C3 18-252-308-7859 nal dolphins. fluffily ironic accounts eat final requests. unusual packages are carefu 6967.02 Supplier#000002885 JAPAN 384 Manufacturer#4 7wgc,Ccw1HNHeJZSWhmubwW,HK1Yy8ADe 22-492-408-3593 posits cajole. furiously i 4515.80 Supplier#000000060 INDIA 59 Manufacturer#5 cb08ntDTARo47WmnBcYXu 18-550-360-2464 thely express ideas use blithely 3978.33 Supplier#000006229 INDONESIA 1228 Manufacturer#3 xBtJZwxIvrC 19-453-638-3838 . furiously even instructions haggle. permanently special deposits are slyly. fin 1103.22 Supplier#000004155 CHINA 1654 Manufacturer#2 1kFL1WiHShkArhTmnzyE2x4QLO 28-897-120-9617 posits sleep quickly at the instructions. carefully final excuses sleep. bold, special pack 1085.89 Supplier#000002757 INDONESIA 256 Manufacturer#3 CaERkgKvPpr4LVD7voAskre1t8mzOHd 47mHT 19-959-961-5223 ggle blithely. regular accounts 1072.26 Supplier#000002594 INDONESIA 93 Manufacturer#2 BJdtygY30B7X6fqO4iCQukCWuseKiUkdTKC9aIhe 19-468-860-7708 sly slow depths cajole fluffily. final acco 276.72 Supplier#000009323 JAPAN 1822 Manufacturer#3 xQzxixcS9G30QYFoAsEiB ph2eQkiCyUwsYc7y 22-230-852-1667 final, regular foxes wake slyly express, bold pinto beans. ironic pinto beans wake slyly
+Predicted: 
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=0.00, score=None
+  Column 1: type=string, coverage=0.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+  Column 4: type=string, coverage=0.00, score=None
+  Column 5: type=string, coverage=0.00, score=None
+  Column 6: type=string, coverage=0.00, score=None
+  Column 7: type=string, coverage=0.00, score=None
+
+Item 3:
+Gold: l-orderkey revenue o-orderdate o-shippriority 3266 102664.5917 1995-03-17 0
+Predicted: Order_Key Order_Date Shipping_Priority Potential_Revenue 3751 1994-04-27 0 320140.22 33794 1995-02-23 0 287449.67 3654 1992-06-03 0 338449.67 5765 1994-12-15 0 371881.26 37574 1994-06-14 0 79921.80 5539 1994-07-31 0 55863.56 5991 1994-05-06 0 54501.09 7461 1994-01-13 0 164420.95 8259 1994-04-19 0 42067.96 9028 1993-12-22 0 50951.53
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0385
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=numeric, coverage=1.00, score=485.0
+  Column 1: type=numeric, coverage=1.00, score=None
+  Column 2: type=string, coverage=1.00, score=0.9
+  Column 3: type=numeric, coverage=1.00, score=320140.22
+
+Item 4:
+Gold: o-orderpriority order-count 1-URGENT 21 2-HIGH 10 3-MEDIUM 18 4-NOT SPECIFIED 23 5-LOW 17
+Predicted:  1-URGENT 15 2-HIGH 3 3-MEDIUM 4 4-NOT SPECIFIED 4 5-LOW 3
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.5000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=1.00, score=0.2
+  Column 1: type=numeric, coverage=1.00, score=None
+
+Item 5:
+Gold: n-name revenue RUSSIA 89000.4420
+Predicted: Nation Revenue GERMANY 727377.95 FRANCE 717440.64 UNITED KINGDOM 715464.23 ROMANIA 710376.88 RUSSIA 708379.46
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.2353
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=1.00, score=1.1666666666666667
+  Column 1: type=numeric, coverage=1.00, score=638377.5079999999
+
+Item 6:
+Gold: revenue 83173.5093
+Predicted: 1994 Extended_Price Discount 15645.75 0.00 17523.60 0.04 17746.80 0.10 26350.74 0.02 16787.25 0.07 76396.95 0.03 49812.10 0.10 45754.45 0.06 25235.32 0.06 63662.00 0.09 89647.56 0.09 62651.52 0.00 8612.03 0.06 3654.42 0.01 51959.04 0.08 1216.20 0.01 70407.67 0.06 29839.05 0.04 74912.80 0.06 17819.37 0.06 1945.88 0.06 17480.19 0.09 89615.12 0.05 11799.90 0.08 57626.24 0.04 55760.76 0.10 57002.94 0.05 34900.15 0.07 34902.27 0.07 43073.25 0.08 20253.24 0.03 71743.32 0.01 21094.65 0.07 39280.80 0.04 45282.96 0.10 31523.29 0.03 24267.98 0.04 22851.90 0.02 5675.37 0.08 40626.56 0.10 56669.57 0.07 14040.45 0.10 42064.32 0.07 92846.67 0.06 45120.24 0.06 10798.68 0.05 85601.40 0.08 1800.71 0.10 54482.87 0.01 60975.56 0.07 32240.78 0.03 34014.60 0.01 76565.44 0.09 55587.49 0.02 82560.34 0.08 36140.06 0.09 57176.70 0.07 69008.85 0.10 26462.54 0.02 41534.40 0.01 66428.60 0.01 24007.20 0.00 22568.40 0.09 49082.49 0.03 33406.29 0.07 1571.56 0.05 51918.57 0.06 85416.94 0.10 31449.28 0.06 47661.76 0.10 39306.38 0.06 39483.40 0.03 29465.48 0.03 51300.15 0.05 28347.30 0.10 85723.77 0.06 13643.30 0.04 31018.83 0.08 16395.60 0.06 49162.00 0.05 27280.53 0.07 4672.96 0.02 68446.30 0.06 5380.40 0.04 54292.80 0.04 51128.55 0.00 34688.64 0.05 4276.40 0.10 25298.78 0.05 2440.26 0.02 39064.20 0.05 14974.85 0.01 5493.36 0.03 28121.50 0.05 31458.25 0.03 32373.88 0.06 57852.83 0.02 57605.34 0.02 55136.17 0.06 13754.26 0.10 36798.96 0.08 84902.88 0.05 47807.24 0.00 64159.36 0.06 54212.80 0.10 26364.26 0.05 17476.92 0.06 21081.06 0.00 27178.20 0.10 30181.88 0.09 49521.90 0.09 58633.74 0.04 80383.80 0.05 14894.40 0.06 3588.48 0.10 30868.54 0.09 8978.64 0.02 38702.16 0.06 21748.86 0.10 28431.27 0.01 26785.80 0.02 1408.36 0.07 12471.80 0.03 33514.32 0.09 66237.57 0.07 9233.75 0.07 17933.76 0.06 36192.57 0.02 21578.95 0.04 73247.40 0.03 56020.80 0.04 63734.16 0.05 39486.70 0.07 24698.73 0.06 11731.60 0.00 74444.93 0.07 6810.84 0.02 18218.59 0.07 32835.39 0.09 39068.06 0.05 19171.62 0.02 12982.50 0.07 45164.92 0.04 14505.00 0.03 1583.68 0.03 8864.28 0.08 78709.96 0.05 10587.08 0.05 17554.55 0.10 50256.44 0.01 42067.23 0.05 92091.50 0.07 17417.60 0.06 51003.81 0.02 41051.61 0.07 28876.50 0.08 10852.80 0.06 23694.22 0.04 79028.00 0.03 31244.13 0.05 43960.81 0.02 26361.45 0.08 42081.12 0.10 72501.73 0.10 51893.40 0.00 7472.50 0.03 12013.10 0.08 10951.90 0.02 43845.50 0.10 23678.55 0.02 55203.50 0.02 43964.88 0.01 57921.82 0.08 35904.96 0.00 13521.20 0.09 39854.40 0.05 34377.86 0.02 61646.40 0.00 40305.44 0.05 55679.42 0.09 15027.12 0.04 5645.88 0.04 58784.85 0.02 31039.96 0.09 65480.54 0.02 61924.72 0.08 24113.44 0.07 5059.83 0.08 13878.40 0.09 51363.36 0.00 62410.63 0.00 44733.60 0.07 53293.32 0.08 12952.60 0.10 39024.10 0.05 29998.71 0.09 65297.00 0.07 18811.44 0.04 85294.79 0.03 1076.09 0.00 73665.89 0.04 18963.75 0.03 48460.88 0.00 30017.12 0.05 16773.77 0.01 28060.03 0.02 5301.32 0.04 3885.84 0.04 75231.96 0.09 58566.74 0.00 55258.02 0.02 43227.08 0.04 40058.26 0.02 30504.76 0.05 52712.64 0.02 47434.14 0.05 12612.40 0.06 42323.96 0.02 34053.81 0.00 20820.91 0.02 14186.16 0.08 4546.35 0.00 23450.75 0.00 5500.55 0.07 3315.44 0.05 4233.93 0.10 41769.28 0.10 35708.50 0.01 56547.10 0.03 40346.24 0.04 79683.50 0.07 26512.60 0.10 45066.58 0.03 49990.07 0.08 67655.64 0.04 6756.96 0.04 12188.80 0.08 5444.55 0.03 26532.30 0.05 88872.28 0.09 37982.88 0.00 83075.04 0.07 37281.64 0.01 55859.50 0.05 51304.95 0.02 3342.30 0.02 16695.38 0.04 30373.80 0.05 26165.44 0.02 66869.60 0.07 75974.06 0.05 45786.51 0.09 59108.72 0.10 17515.81 0.04 45215.52 0.07 20249.60 0.00 31019.21 0.09 5393.60 0.02 48909.76 0.07 7167.48 0.05 37117.80 0.00 20484.16 0.10 5555.58 0.09 37956.96 0.04 26359.84 0.07 64671.36 0.04 67785.96 0.07 14233.90 0.05 49781.90 0.10 61354.42 0.00 54391.48 0.03 40690.20 0.08 48250.02 0.08 35188.23 0.03 68566.68 0.09 66799.80 0.05 82736.16 0.10 32552.10 0.06 70447.16 0.00 47088.30 0.04 16682.25 0.06 21526.26 0.05 46048.80 0.09 46870.50 0.09 1253.25 0.06 22539.79 0.06 56550.45 0.07 36399.66 0.07 55764.45 0.06 85951.25 0.09 16337.12 0.07 38756.61 0.00 7076.65 0.05 76784.84 0.04 28955.64 0.09 25828.22 0.05 16966.20 0.04 35296.02 0.03 8989.61 0.09 22871.66 0.01 49524.05 0.03 46989.36 0.09 25278.61 0.10 1778.75 0.06 50079.92 0.05 23620.05 0.00 22785.10 0.10 17268.81 0.07 44963.50 0.05 34613.02 0.07 26961.90 0.10 44188.36 0.04 8378.70 0.08 36217.80 0.08 29651.02 0.01 32224.51 0.10 37309.92 0.03 11755.68 0.00 20307.28 0.03 20401.60 0.05 51891.03 0.06 28485.24 0.05 37617.88 0.08 35537.20 0.07 18787.84 0.08 6531.07 0.03 39408.72 0.09 24179.22 0.01 5972.79 0.05 21460.68 0.02 11771.34 0.01 35734.60 0.08 23976.00 0.09 1241.19 0.09 39626.30 0.09 11128.74 0.02 84997.85 0.08 49955.85 0.02 36072.68 0.03 32149.88 0.03 50280.49 0.04 44245.50 0.04 78626.00 0.01 40696.32 0.08 57946.56 0.05 76642.58 0.08 75927.54 0.06 62498.92 0.00 66108.60 0.08 46952.36 0.02 47601.84 0.05 34834.00 0.10 22471.69 0.10 9869.85 0.02 32364.87 0.08 33345.84 0.10 20359.56 0.03 33819.89 0.01 6581.55 0.06 30644.74 0.07 23503.00 0.01 71848.08 0.05 3429.30 0.07 83700.89 0.10 60855.20 0.01 36719.22 0.02 12903.00 0.02 31271.60 0.02 61507.74 0.01 48098.60 0.10 5780.82 0.00 48562.56 0.09 53540.52 0.01 47568.23 0.10 22679.76 0.10 9144.59 0.04 24191.88 0.03 14776.85 0.06 40297.81 0.08 73015.20 0.07 50668.17 0.00 85100.26 0.01 68105.10 0.01 48128.40 0.05 7319.40 0.09 37662.04 0.09 19450.89 0.06 1672.67 0.06 22722.12 0.08 38642.80 0.07 47227.60 0.05 33430.76 0.06 39709.41 0.03 28029.96 0.10 59702.09 0.01 22448.25 0.10 47618.48 0.06 8954.96 0.05 23386.22 0.02 58108.48 0.05 40482.80 0.09 47408.24 0.07 35170.32 0.10 44288.64 0.10 40260.81 0.02 26767.02 0.04 38643.85 0.03 39354.04 0.03 52831.80 0.09 35067.82 0.07 82405.84 0.07 37436.20 0.00 19148.16 0.00 40058.87 0.03 39874.99 0.10 68281.44 0.06 24385.31 0.02 42319.50 0.03 9529.76 0.06 30602.35 0.06 87063.36 0.04 47948.01 0.08 71323.00 0.03 41420.00 0.06 55457.46 0.08 67628.60 0.01 69450.81 0.01 23383.20 0.04 67830.80 0.01 85840.48 0.07 37422.84 0.04 53479.80 0.06 14454.88 0.08 57097.97 0.03 55360.13 0.07 30920.56 0.09 53589.76 0.05 25270.50 0.02 17783.70 0.06 8040.64 0.05 54867.40 0.07 3136.96 0.00 63706.00 0.08 16318.38 0.02 21345.72 0.10 97144.00 0.07 17885.36 0.08 55242.58 0.09 44493.75 0.03 38715.82 0.05 1752.74 0.00 26668.80 0.02 7987.68 0.09 38984.40 0.04 31867.36 0.01 1103.07 0.02 68372.64 0.00 55831.68 0.05 4618.86 0.10 16406.00 0.00 1807.87 0.08 54343.80 0.04 18798.60 0.09 73352.40 0.02 10665.13 0.02 11513.40 0.03 61006.45 0.05 42995.94 0.03 45404.80 0.05 21732.29 0.01 21009.12 0.05 18334.20 0.01 82513.88 0.10 30730.86 0.06 17485.27 0.09 13641.98 0.06 61479.20 0.05 31018.83 0.03 25982.32 0.03 56666.61 0.05 5747.58 0.02 33485.40 0.08 19153.90 0.08 62314.86 0.08 85102.71 0.06 56615.46 0.09 30059.64 0.06 50442.44 0.01 38634.96 0.10 53782.08 0.09 4005.90 0.02 47940.36 0.05 10540.74 0.06 76072.99 0.03 68124.62 0.00 16605.29 0.09 57541.77 0.05
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=1.00, score=1.0
+  Column 1: type=numeric, coverage=1.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+  Column 4: type=string, coverage=0.00, score=None
+  Column 5: type=string, coverage=0.00, score=None
+  Column 6: type=string, coverage=0.00, score=None
+  Column 7: type=string, coverage=0.00, score=None
+  Column 8: type=string, coverage=0.00, score=None
+  Column 9: type=string, coverage=0.00, score=None
+  Column 10: type=string, coverage=0.00, score=None
+  Column 11: type=string, coverage=0.00, score=None
+  Column 12: type=string, coverage=0.00, score=None
+  Column 13: type=string, coverage=0.00, score=None
+  Column 14: type=string, coverage=0.00, score=None
+  Column 15: type=string, coverage=0.00, score=None
+  Column 16: type=string, coverage=0.00, score=None
+  Column 17: type=string, coverage=0.00, score=None
+  Column 18: type=string, coverage=0.00, score=None
+  Column 19: type=string, coverage=0.00, score=None
+  Column 20: type=string, coverage=0.00, score=None
+  Column 21: type=string, coverage=0.00, score=None
+  Column 22: type=string, coverage=0.00, score=None
+  Column 23: type=string, coverage=0.00, score=None
+  Column 24: type=string, coverage=0.00, score=None
+  Column 25: type=string, coverage=0.00, score=None
+  Column 26: type=string, coverage=0.00, score=None
+  Column 27: type=string, coverage=0.00, score=None
+  Column 28: type=string, coverage=0.00, score=None
+  Column 29: type=string, coverage=0.00, score=None
+  Column 30: type=string, coverage=0.00, score=None
+  Column 31: type=string, coverage=0.00, score=None
+  Column 32: type=string, coverage=0.00, score=None
+  Column 33: type=string, coverage=0.00, score=None
+  Column 34: type=string, coverage=0.00, score=None
+  Column 35: type=string, coverage=0.00, score=None
+  Column 36: type=string, coverage=0.00, score=None
+  Column 37: type=string, coverage=0.00, score=None
+  Column 38: type=string, coverage=0.00, score=None
+  Column 39: type=string, coverage=0.00, score=None
+  Column 40: type=string, coverage=0.00, score=None
+  Column 41: type=string, coverage=0.00, score=None
+  Column 42: type=string, coverage=0.00, score=None
+  Column 43: type=string, coverage=0.00, score=None
+  Column 44: type=string, coverage=0.00, score=None
+  Column 45: type=string, coverage=0.00, score=None
+  Column 46: type=string, coverage=0.00, score=None
+  Column 47: type=string, coverage=0.00, score=None
+  Column 48: type=string, coverage=0.00, score=None
+  Column 49: type=string, coverage=0.00, score=None
+  Column 50: type=string, coverage=0.00, score=None
+  Column 51: type=string, coverage=0.00, score=None
+  Column 52: type=string, coverage=0.00, score=None
+  Column 53: type=string, coverage=0.00, score=None
+  Column 54: type=string, coverage=0.00, score=None
+  Column 55: type=string, coverage=0.00, score=None
+  Column 56: type=string, coverage=0.00, score=None
+  Column 57: type=string, coverage=0.00, score=None
+  Column 58: type=string, coverage=0.00, score=None
+  Column 59: type=string, coverage=0.00, score=None
+  Column 60: type=string, coverage=0.00, score=None
+  Column 61: type=string, coverage=0.00, score=None
+  Column 62: type=string, coverage=0.00, score=None
+  Column 63: type=string, coverage=0.00, score=None
+  Column 64: type=string, coverage=0.00, score=None
+  Column 65: type=string, coverage=0.00, score=None
+  Column 66: type=string, coverage=0.00, score=None
+  Column 67: type=string, coverage=0.00, score=None
+  Column 68: type=string, coverage=0.00, score=None
+  Column 69: type=string, coverage=0.00, score=None
+  Column 70: type=string, coverage=0.00, score=None
+  Column 71: type=string, coverage=0.00, score=None
+  Column 72: type=string, coverage=0.00, score=None
+  Column 73: type=string, coverage=0.00, score=None
+  Column 74: type=string, coverage=0.00, score=None
+  Column 75: type=string, coverage=0.00, score=None
+  Column 76: type=string, coverage=0.00, score=None
+  Column 77: type=string, coverage=0.00, score=None
+  Column 78: type=string, coverage=0.00, score=None
+  Column 79: type=string, coverage=0.00, score=None
+  Column 80: type=string, coverage=0.00, score=None
+  Column 81: type=string, coverage=0.00, score=None
+  Column 82: type=string, coverage=0.00, score=None
+  Column 83: type=string, coverage=0.00, score=None
+  Column 84: type=string, coverage=0.00, score=None
+  Column 85: type=string, coverage=0.00, score=None
+  Column 86: type=string, coverage=0.00, score=None
+  Column 87: type=string, coverage=0.00, score=None
+  Column 88: type=string, coverage=0.00, score=None
+  Column 89: type=string, coverage=0.00, score=None
+  Column 90: type=string, coverage=0.00, score=None
+  Column 91: type=string, coverage=0.00, score=None
+  Column 92: type=string, coverage=0.00, score=None
+  Column 93: type=string, coverage=0.00, score=None
+  Column 94: type=string, coverage=0.00, score=None
+  Column 95: type=string, coverage=0.00, score=None
+  Column 96: type=string, coverage=0.00, score=None
+  Column 97: type=string, coverage=0.00, score=None
+  Column 98: type=string, coverage=0.00, score=None
+  Column 99: type=string, coverage=0.00, score=None
+  Column 100: type=string, coverage=0.00, score=None
+  Column 101: type=string, coverage=0.00, score=None
+  Column 102: type=string, coverage=0.00, score=None
+  Column 103: type=string, coverage=0.00, score=None
+  Column 104: type=string, coverage=0.00, score=None
+  Column 105: type=string, coverage=0.00, score=None
+  Column 106: type=string, coverage=0.00, score=None
+  Column 107: type=string, coverage=0.00, score=None
+  Column 108: type=string, coverage=0.00, score=None
+  Column 109: type=string, coverage=0.00, score=None
+  Column 110: type=string, coverage=0.00, score=None
+  Column 111: type=string, coverage=0.00, score=None
+  Column 112: type=string, coverage=0.00, score=None
+  Column 113: type=string, coverage=0.00, score=None
+  Column 114: type=string, coverage=0.00, score=None
+  Column 115: type=string, coverage=0.00, score=None
+  Column 116: type=string, coverage=0.00, score=None
+  Column 117: type=string, coverage=0.00, score=None
+  Column 118: type=string, coverage=0.00, score=None
+  Column 119: type=string, coverage=0.00, score=None
+  Column 120: type=string, coverage=0.00, score=None
+  Column 121: type=string, coverage=0.00, score=None
+  Column 122: type=string, coverage=0.00, score=None
+  Column 123: type=string, coverage=0.00, score=None
+  Column 124: type=string, coverage=0.00, score=None
+  Column 125: type=string, coverage=0.00, score=None
+  Column 126: type=string, coverage=0.00, score=None
+  Column 127: type=string, coverage=0.00, score=None
+  Column 128: type=string, coverage=0.00, score=None
+  Column 129: type=string, coverage=0.00, score=None
+  Column 130: type=string, coverage=0.00, score=None
+  Column 131: type=string, coverage=0.00, score=None
+  Column 132: type=string, coverage=0.00, score=None
+  Column 133: type=string, coverage=0.00, score=None
+  Column 134: type=string, coverage=0.00, score=None
+  Column 135: type=string, coverage=0.00, score=None
+  Column 136: type=string, coverage=0.00, score=None
+  Column 137: type=string, coverage=0.00, score=None
+  Column 138: type=string, coverage=0.00, score=None
+  Column 139: type=string, coverage=0.00, score=None
+  Column 140: type=string, coverage=0.00, score=None
+  Column 141: type=string, coverage=0.00, score=None
+  Column 142: type=string, coverage=0.00, score=None
+  Column 143: type=string, coverage=0.00, score=None
+  Column 144: type=string, coverage=0.00, score=None
+  Column 145: type=string, coverage=0.00, score=None
+  Column 146: type=string, coverage=0.00, score=None
+  Column 147: type=string, coverage=0.00, score=None
+  Column 148: type=string, coverage=0.00, score=None
+  Column 149: type=string, coverage=0.00, score=None
+  Column 150: type=string, coverage=0.00, score=None
+  Column 151: type=string, coverage=0.00, score=None
+  Column 152: type=string, coverage=0.00, score=None
+  Column 153: type=string, coverage=0.00, score=None
+  Column 154: type=string, coverage=0.00, score=None
+  Column 155: type=string, coverage=0.00, score=None
+  Column 156: type=string, coverage=0.00, score=None
+  Column 157: type=string, coverage=0.00, score=None
+  Column 158: type=string, coverage=0.00, score=None
+  Column 159: type=string, coverage=0.00, score=None
+  Column 160: type=string, coverage=0.00, score=None
+  Column 161: type=string, coverage=0.00, score=None
+  Column 162: type=string, coverage=0.00, score=None
+  Column 163: type=string, coverage=0.00, score=None
+  Column 164: type=string, coverage=0.00, score=None
+  Column 165: type=string, coverage=0.00, score=None
+  Column 166: type=string, coverage=0.00, score=None
+  Column 167: type=string, coverage=0.00, score=None
+  Column 168: type=string, coverage=0.00, score=None
+  Column 169: type=string, coverage=0.00, score=None
+  Column 170: type=string, coverage=0.00, score=None
+  Column 171: type=string, coverage=0.00, score=None
+  Column 172: type=string, coverage=0.00, score=None
+  Column 173: type=string, coverage=0.00, score=None
+  Column 174: type=string, coverage=0.00, score=None
+  Column 175: type=string, coverage=0.00, score=None
+  Column 176: type=string, coverage=0.00, score=None
+  Column 177: type=string, coverage=0.00, score=None
+  Column 178: type=string, coverage=0.00, score=None
+  Column 179: type=string, coverage=0.00, score=None
+  Column 180: type=string, coverage=0.00, score=None
+  Column 181: type=string, coverage=0.00, score=None
+  Column 182: type=string, coverage=0.00, score=None
+  Column 183: type=string, coverage=0.00, score=None
+  Column 184: type=string, coverage=0.00, score=None
+  Column 185: type=string, coverage=0.00, score=None
+  Column 186: type=string, coverage=0.00, score=None
+  Column 187: type=string, coverage=0.00, score=None
+  Column 188: type=string, coverage=0.00, score=None
+  Column 189: type=string, coverage=0.00, score=None
+  Column 190: type=string, coverage=0.00, score=None
+  Column 191: type=string, coverage=0.00, score=None
+  Column 192: type=string, coverage=0.00, score=None
+  Column 193: type=string, coverage=0.00, score=None
+  Column 194: type=string, coverage=0.00, score=None
+  Column 195: type=string, coverage=0.00, score=None
+  Column 196: type=string, coverage=0.00, score=None
+  Column 197: type=string, coverage=0.00, score=None
+  Column 198: type=string, coverage=0.00, score=None
+  Column 199: type=string, coverage=0.00, score=None
+  Column 200: type=string, coverage=0.00, score=None
+  Column 201: type=string, coverage=0.00, score=None
+  Column 202: type=string, coverage=0.00, score=None
+  Column 203: type=string, coverage=0.00, score=None
+  Column 204: type=string, coverage=0.00, score=None
+  Column 205: type=string, coverage=0.00, score=None
+  Column 206: type=string, coverage=0.00, score=None
+  Column 207: type=string, coverage=0.00, score=None
+  Column 208: type=string, coverage=0.00, score=None
+  Column 209: type=string, coverage=0.00, score=None
+  Column 210: type=string, coverage=0.00, score=None
+  Column 211: type=string, coverage=0.00, score=None
+  Column 212: type=string, coverage=0.00, score=None
+  Column 213: type=string, coverage=0.00, score=None
+  Column 214: type=string, coverage=0.00, score=None
+  Column 215: type=string, coverage=0.00, score=None
+  Column 216: type=string, coverage=0.00, score=None
+  Column 217: type=string, coverage=0.00, score=None
+  Column 218: type=string, coverage=0.00, score=None
+  Column 219: type=string, coverage=0.00, score=None
+  Column 220: type=string, coverage=0.00, score=None
+  Column 221: type=string, coverage=0.00, score=None
+  Column 222: type=string, coverage=0.00, score=None
+  Column 223: type=string, coverage=0.00, score=None
+  Column 224: type=string, coverage=0.00, score=None
+  Column 225: type=string, coverage=0.00, score=None
+  Column 226: type=string, coverage=0.00, score=None
+  Column 227: type=string, coverage=0.00, score=None
+  Column 228: type=string, coverage=0.00, score=None
+  Column 229: type=string, coverage=0.00, score=None
+  Column 230: type=string, coverage=0.00, score=None
+  Column 231: type=string, coverage=0.00, score=None
+  Column 232: type=string, coverage=0.00, score=None
+  Column 233: type=string, coverage=0.00, score=None
+  Column 234: type=string, coverage=0.00, score=None
+  Column 235: type=string, coverage=0.00, score=None
+  Column 236: type=string, coverage=0.00, score=None
+  Column 237: type=string, coverage=0.00, score=None
+  Column 238: type=string, coverage=0.00, score=None
+  Column 239: type=string, coverage=0.00, score=None
+  Column 240: type=string, coverage=0.00, score=None
+  Column 241: type=string, coverage=0.00, score=None
+  Column 242: type=string, coverage=0.00, score=None
+  Column 243: type=string, coverage=0.00, score=None
+  Column 244: type=string, coverage=0.00, score=None
+  Column 245: type=string, coverage=0.00, score=None
+  Column 246: type=string, coverage=0.00, score=None
+  Column 247: type=string, coverage=0.00, score=None
+  Column 248: type=string, coverage=0.00, score=None
+  Column 249: type=string, coverage=0.00, score=None
+  Column 250: type=string, coverage=0.00, score=None
+  Column 251: type=string, coverage=0.00, score=None
+  Column 252: type=string, coverage=0.00, score=None
+  Column 253: type=string, coverage=0.00, score=None
+  Column 254: type=string, coverage=0.00, score=None
+  Column 255: type=string, coverage=0.00, score=None
+  Column 256: type=string, coverage=0.00, score=None
+  Column 257: type=string, coverage=0.00, score=None
+  Column 258: type=string, coverage=0.00, score=None
+  Column 259: type=string, coverage=0.00, score=None
+  Column 260: type=string, coverage=0.00, score=None
+  Column 261: type=string, coverage=0.00, score=None
+  Column 262: type=string, coverage=0.00, score=None
+  Column 263: type=string, coverage=0.00, score=None
+  Column 264: type=string, coverage=0.00, score=None
+  Column 265: type=string, coverage=0.00, score=None
+  Column 266: type=string, coverage=0.00, score=None
+  Column 267: type=string, coverage=0.00, score=None
+  Column 268: type=string, coverage=0.00, score=None
+  Column 269: type=string, coverage=0.00, score=None
+  Column 270: type=string, coverage=0.00, score=None
+  Column 271: type=string, coverage=0.00, score=None
+  Column 272: type=string, coverage=0.00, score=None
+  Column 273: type=string, coverage=0.00, score=None
+  Column 274: type=string, coverage=0.00, score=None
+  Column 275: type=string, coverage=0.00, score=None
+  Column 276: type=string, coverage=0.00, score=None
+  Column 277: type=string, coverage=0.00, score=None
+  Column 278: type=string, coverage=0.00, score=None
+  Column 279: type=string, coverage=0.00, score=None
+  Column 280: type=string, coverage=0.00, score=None
+  Column 281: type=string, coverage=0.00, score=None
+  Column 282: type=string, coverage=0.00, score=None
+  Column 283: type=string, coverage=0.00, score=None
+  Column 284: type=string, coverage=0.00, score=None
+  Column 285: type=string, coverage=0.00, score=None
+  Column 286: type=string, coverage=0.00, score=None
+  Column 287: type=string, coverage=0.00, score=None
+  Column 288: type=string, coverage=0.00, score=None
+  Column 289: type=string, coverage=0.00, score=None
+  Column 290: type=string, coverage=0.00, score=None
+  Column 291: type=string, coverage=0.00, score=None
+  Column 292: type=string, coverage=0.00, score=None
+  Column 293: type=string, coverage=0.00, score=None
+  Column 294: type=string, coverage=0.00, score=None
+  Column 295: type=string, coverage=0.00, score=None
+  Column 296: type=string, coverage=0.00, score=None
+  Column 297: type=string, coverage=0.00, score=None
+  Column 298: type=string, coverage=0.00, score=None
+  Column 299: type=string, coverage=0.00, score=None
+  Column 300: type=string, coverage=0.00, score=None
+  Column 301: type=string, coverage=0.00, score=None
+  Column 302: type=string, coverage=0.00, score=None
+  Column 303: type=string, coverage=0.00, score=None
+  Column 304: type=string, coverage=0.00, score=None
+  Column 305: type=string, coverage=0.00, score=None
+  Column 306: type=string, coverage=0.00, score=None
+  Column 307: type=string, coverage=0.00, score=None
+  Column 308: type=string, coverage=0.00, score=None
+  Column 309: type=string, coverage=0.00, score=None
+  Column 310: type=string, coverage=0.00, score=None
+  Column 311: type=string, coverage=0.00, score=None
+  Column 312: type=string, coverage=0.00, score=None
+  Column 313: type=string, coverage=0.00, score=None
+  Column 314: type=string, coverage=0.00, score=None
+  Column 315: type=string, coverage=0.00, score=None
+  Column 316: type=string, coverage=0.00, score=None
+  Column 317: type=string, coverage=0.00, score=None
+  Column 318: type=string, coverage=0.00, score=None
+  Column 319: type=string, coverage=0.00, score=None
+  Column 320: type=string, coverage=0.00, score=None
+  Column 321: type=string, coverage=0.00, score=None
+  Column 322: type=string, coverage=0.00, score=None
+  Column 323: type=string, coverage=0.00, score=None
+  Column 324: type=string, coverage=0.00, score=None
+  Column 325: type=string, coverage=0.00, score=None
+  Column 326: type=string, coverage=0.00, score=None
+  Column 327: type=string, coverage=0.00, score=None
+  Column 328: type=string, coverage=0.00, score=None
+  Column 329: type=string, coverage=0.00, score=None
+  Column 330: type=string, coverage=0.00, score=None
+  Column 331: type=string, coverage=0.00, score=None
+  Column 332: type=string, coverage=0.00, score=None
+  Column 333: type=string, coverage=0.00, score=None
+  Column 334: type=string, coverage=0.00, score=None
+  Column 335: type=string, coverage=0.00, score=None
+  Column 336: type=string, coverage=0.00, score=None
+  Column 337: type=string, coverage=0.00, score=None
+  Column 338: type=string, coverage=0.00, score=None
+  Column 339: type=string, coverage=0.00, score=None
+  Column 340: type=string, coverage=0.00, score=None
+  Column 341: type=string, coverage=0.00, score=None
+  Column 342: type=string, coverage=0.00, score=None
+  Column 343: type=string, coverage=0.00, score=None
+  Column 344: type=string, coverage=0.00, score=None
+  Column 345: type=string, coverage=0.00, score=None
+  Column 346: type=string, coverage=0.00, score=None
+  Column 347: type=string, coverage=0.00, score=None
+  Column 348: type=string, coverage=0.00, score=None
+  Column 349: type=string, coverage=0.00, score=None
+  Column 350: type=string, coverage=0.00, score=None
+  Column 351: type=string, coverage=0.00, score=None
+  Column 352: type=string, coverage=0.00, score=None
+  Column 353: type=string, coverage=0.00, score=None
+  Column 354: type=string, coverage=0.00, score=None
+  Column 355: type=string, coverage=0.00, score=None
+  Column 356: type=string, coverage=0.00, score=None
+  Column 357: type=string, coverage=0.00, score=None
+  Column 358: type=string, coverage=0.00, score=None
+  Column 359: type=string, coverage=0.00, score=None
+  Column 360: type=string, coverage=0.00, score=None
+  Column 361: type=string, coverage=0.00, score=None
+  Column 362: type=string, coverage=0.00, score=None
+  Column 363: type=string, coverage=0.00, score=None
+  Column 364: type=string, coverage=0.00, score=None
+  Column 365: type=string, coverage=0.00, score=None
+  Column 366: type=string, coverage=0.00, score=None
+  Column 367: type=string, coverage=0.00, score=None
+  Column 368: type=string, coverage=0.00, score=None
+  Column 369: type=string, coverage=0.00, score=None
+  Column 370: type=string, coverage=0.00, score=None
+  Column 371: type=string, coverage=0.00, score=None
+  Column 372: type=string, coverage=0.00, score=None
+  Column 373: type=string, coverage=0.00, score=None
+  Column 374: type=string, coverage=0.00, score=None
+  Column 375: type=string, coverage=0.00, score=None
+  Column 376: type=string, coverage=0.00, score=None
+  Column 377: type=string, coverage=0.00, score=None
+  Column 378: type=string, coverage=0.00, score=None
+  Column 379: type=string, coverage=0.00, score=None
+  Column 380: type=string, coverage=0.00, score=None
+  Column 381: type=string, coverage=0.00, score=None
+  Column 382: type=string, coverage=0.00, score=None
+  Column 383: type=string, coverage=0.00, score=None
+  Column 384: type=string, coverage=0.00, score=None
+  Column 385: type=string, coverage=0.00, score=None
+  Column 386: type=string, coverage=0.00, score=None
+  Column 387: type=string, coverage=0.00, score=None
+  Column 388: type=string, coverage=0.00, score=None
+  Column 389: type=string, coverage=0.00, score=None
+  Column 390: type=string, coverage=0.00, score=None
+  Column 391: type=string, coverage=0.00, score=None
+  Column 392: type=string, coverage=0.00, score=None
+  Column 393: type=string, coverage=0.00, score=None
+  Column 394: type=string, coverage=0.00, score=None
+  Column 395: type=string, coverage=0.00, score=None
+  Column 396: type=string, coverage=0.00, score=None
+  Column 397: type=string, coverage=0.00, score=None
+  Column 398: type=string, coverage=0.00, score=None
+  Column 399: type=string, coverage=0.00, score=None
+  Column 400: type=string, coverage=0.00, score=None
+  Column 401: type=string, coverage=0.00, score=None
+  Column 402: type=string, coverage=0.00, score=None
+  Column 403: type=string, coverage=0.00, score=None
+  Column 404: type=string, coverage=0.00, score=None
+  Column 405: type=string, coverage=0.00, score=None
+  Column 406: type=string, coverage=0.00, score=None
+  Column 407: type=string, coverage=0.00, score=None
+  Column 408: type=string, coverage=0.00, score=None
+  Column 409: type=string, coverage=0.00, score=None
+  Column 410: type=string, coverage=0.00, score=None
+  Column 411: type=string, coverage=0.00, score=None
+  Column 412: type=string, coverage=0.00, score=None
+  Column 413: type=string, coverage=0.00, score=None
+  Column 414: type=string, coverage=0.00, score=None
+  Column 415: type=string, coverage=0.00, score=None
+  Column 416: type=string, coverage=0.00, score=None
+  Column 417: type=string, coverage=0.00, score=None
+  Column 418: type=string, coverage=0.00, score=None
+  Column 419: type=string, coverage=0.00, score=None
+  Column 420: type=string, coverage=0.00, score=None
+  Column 421: type=string, coverage=0.00, score=None
+  Column 422: type=string, coverage=0.00, score=None
+  Column 423: type=string, coverage=0.00, score=None
+  Column 424: type=string, coverage=0.00, score=None
+  Column 425: type=string, coverage=0.00, score=None
+  Column 426: type=string, coverage=0.00, score=None
+  Column 427: type=string, coverage=0.00, score=None
+  Column 428: type=string, coverage=0.00, score=None
+  Column 429: type=string, coverage=0.00, score=None
+  Column 430: type=string, coverage=0.00, score=None
+  Column 431: type=string, coverage=0.00, score=None
+  Column 432: type=string, coverage=0.00, score=None
+  Column 433: type=string, coverage=0.00, score=None
+  Column 434: type=string, coverage=0.00, score=None
+  Column 435: type=string, coverage=0.00, score=None
+  Column 436: type=string, coverage=0.00, score=None
+  Column 437: type=string, coverage=0.00, score=None
+  Column 438: type=string, coverage=0.00, score=None
+  Column 439: type=string, coverage=0.00, score=None
+  Column 440: type=string, coverage=0.00, score=None
+  Column 441: type=string, coverage=0.00, score=None
+  Column 442: type=string, coverage=0.00, score=None
+  Column 443: type=string, coverage=0.00, score=None
+  Column 444: type=string, coverage=0.00, score=None
+  Column 445: type=string, coverage=0.00, score=None
+  Column 446: type=string, coverage=0.00, score=None
+  Column 447: type=string, coverage=0.00, score=None
+  Column 448: type=string, coverage=0.00, score=None
+  Column 449: type=string, coverage=0.00, score=None
+  Column 450: type=string, coverage=0.00, score=None
+  Column 451: type=string, coverage=0.00, score=None
+  Column 452: type=string, coverage=0.00, score=None
+  Column 453: type=string, coverage=0.00, score=None
+  Column 454: type=string, coverage=0.00, score=None
+  Column 455: type=string, coverage=0.00, score=None
+  Column 456: type=string, coverage=0.00, score=None
+  Column 457: type=string, coverage=0.00, score=None
+  Column 458: type=string, coverage=0.00, score=None
+  Column 459: type=string, coverage=0.00, score=None
+  Column 460: type=string, coverage=0.00, score=None
+  Column 461: type=string, coverage=0.00, score=None
+  Column 462: type=string, coverage=0.00, score=None
+  Column 463: type=string, coverage=0.00, score=None
+  Column 464: type=string, coverage=0.00, score=None
+  Column 465: type=string, coverage=0.00, score=None
+  Column 466: type=string, coverage=0.00, score=None
+  Column 467: type=string, coverage=0.00, score=None
+  Column 468: type=string, coverage=0.00, score=None
+  Column 469: type=string, coverage=0.00, score=None
+  Column 470: type=string, coverage=0.00, score=None
+  Column 471: type=string, coverage=0.00, score=None
+  Column 472: type=string, coverage=0.00, score=None
+  Column 473: type=string, coverage=0.00, score=None
+  Column 474: type=string, coverage=0.00, score=None
+  Column 475: type=string, coverage=0.00, score=None
+  Column 476: type=string, coverage=0.00, score=None
+  Column 477: type=string, coverage=0.00, score=None
+  Column 478: type=string, coverage=0.00, score=None
+  Column 479: type=string, coverage=0.00, score=None
+  Column 480: type=string, coverage=0.00, score=None
+  Column 481: type=string, coverage=0.00, score=None
+  Column 482: type=string, coverage=0.00, score=None
+  Column 483: type=string, coverage=0.00, score=None
+  Column 484: type=string, coverage=0.00, score=None
+  Column 485: type=string, coverage=0.00, score=None
+  Column 486: type=string, coverage=0.00, score=None
+  Column 487: type=string, coverage=0.00, score=None
+  Column 488: type=string, coverage=0.00, score=None
+  Column 489: type=string, coverage=0.00, score=None
+  Column 490: type=string, coverage=0.00, score=None
+  Column 491: type=string, coverage=0.00, score=None
+  Column 492: type=string, coverage=0.00, score=None
+  Column 493: type=string, coverage=0.00, score=None
+  Column 494: type=string, coverage=0.00, score=None
+  Column 495: type=string, coverage=0.00, score=None
+  Column 496: type=string, coverage=0.00, score=None
+  Column 497: type=string, coverage=0.00, score=None
+  Column 498: type=string, coverage=0.00, score=None
+  Column 499: type=string, coverage=0.00, score=None
+  Column 500: type=string, coverage=0.00, score=None
+  Column 501: type=string, coverage=0.00, score=None
+  Column 502: type=string, coverage=0.00, score=None
+  Column 503: type=string, coverage=0.00, score=None
+  Column 504: type=string, coverage=0.00, score=None
+  Column 505: type=string, coverage=0.00, score=None
+  Column 506: type=string, coverage=0.00, score=None
+  Column 507: type=string, coverage=0.00, score=None
+  Column 508: type=string, coverage=0.00, score=None
+  Column 509: type=string, coverage=0.00, score=None
+  Column 510: type=string, coverage=0.00, score=None
+  Column 511: type=string, coverage=0.00, score=None
+  Column 512: type=string, coverage=0.00, score=None
+  Column 513: type=string, coverage=0.00, score=None
+  Column 514: type=string, coverage=0.00, score=None
+  Column 515: type=string, coverage=0.00, score=None
+  Column 516: type=string, coverage=0.00, score=None
+  Column 517: type=string, coverage=0.00, score=None
+  Column 518: type=string, coverage=0.00, score=None
+  Column 519: type=string, coverage=0.00, score=None
+  Column 520: type=string, coverage=0.00, score=None
+  Column 521: type=string, coverage=0.00, score=None
+  Column 522: type=string, coverage=0.00, score=None
+  Column 523: type=string, coverage=0.00, score=None
+  Column 524: type=string, coverage=0.00, score=None
+  Column 525: type=string, coverage=0.00, score=None
+  Column 526: type=string, coverage=0.00, score=None
+  Column 527: type=string, coverage=0.00, score=None
+  Column 528: type=string, coverage=0.00, score=None
+  Column 529: type=string, coverage=0.00, score=None
+  Column 530: type=string, coverage=0.00, score=None
+  Column 531: type=string, coverage=0.00, score=None
+  Column 532: type=string, coverage=0.00, score=None
+  Column 533: type=string, coverage=0.00, score=None
+  Column 534: type=string, coverage=0.00, score=None
+  Column 535: type=string, coverage=0.00, score=None
+  Column 536: type=string, coverage=0.00, score=None
+  Column 537: type=string, coverage=0.00, score=None
+  Column 538: type=string, coverage=0.00, score=None
+  Column 539: type=string, coverage=0.00, score=None
+  Column 540: type=string, coverage=0.00, score=None
+  Column 541: type=string, coverage=0.00, score=None
+  Column 542: type=string, coverage=0.00, score=None
+  Column 543: type=string, coverage=0.00, score=None
+  Column 544: type=string, coverage=0.00, score=None
+  Column 545: type=string, coverage=0.00, score=None
+  Column 546: type=string, coverage=0.00, score=None
+  Column 547: type=string, coverage=0.00, score=None
+  Column 548: type=string, coverage=0.00, score=None
+  Column 549: type=string, coverage=0.00, score=None
+  Column 550: type=string, coverage=0.00, score=None
+  Column 551: type=string, coverage=0.00, score=None
+  Column 552: type=string, coverage=0.00, score=None
+  Column 553: type=string, coverage=0.00, score=None
+  Column 554: type=string, coverage=0.00, score=None
+  Column 555: type=string, coverage=0.00, score=None
+  Column 556: type=string, coverage=0.00, score=None
+  Column 557: type=string, coverage=0.00, score=None
+  Column 558: type=string, coverage=0.00, score=None
+  Column 559: type=string, coverage=0.00, score=None
+  Column 560: type=string, coverage=0.00, score=None
+  Column 561: type=string, coverage=0.00, score=None
+  Column 562: type=string, coverage=0.00, score=None
+  Column 563: type=string, coverage=0.00, score=None
+  Column 564: type=string, coverage=0.00, score=None
+  Column 565: type=string, coverage=0.00, score=None
+  Column 566: type=string, coverage=0.00, score=None
+  Column 567: type=string, coverage=0.00, score=None
+  Column 568: type=string, coverage=0.00, score=None
+  Column 569: type=string, coverage=0.00, score=None
+  Column 570: type=string, coverage=0.00, score=None
+  Column 571: type=string, coverage=0.00, score=None
+  Column 572: type=string, coverage=0.00, score=None
+  Column 573: type=string, coverage=0.00, score=None
+  Column 574: type=string, coverage=0.00, score=None
+  Column 575: type=string, coverage=0.00, score=None
+  Column 576: type=string, coverage=0.00, score=None
+  Column 577: type=string, coverage=0.00, score=None
+  Column 578: type=string, coverage=0.00, score=None
+  Column 579: type=string, coverage=0.00, score=None
+  Column 580: type=string, coverage=0.00, score=None
+  Column 581: type=string, coverage=0.00, score=None
+  Column 582: type=string, coverage=0.00, score=None
+  Column 583: type=string, coverage=0.00, score=None
+  Column 584: type=string, coverage=0.00, score=None
+  Column 585: type=string, coverage=0.00, score=None
+  Column 586: type=string, coverage=0.00, score=None
+  Column 587: type=string, coverage=0.00, score=None
+  Column 588: type=string, coverage=0.00, score=None
+  Column 589: type=string, coverage=0.00, score=None
+  Column 590: type=string, coverage=0.00, score=None
+  Column 591: type=string, coverage=0.00, score=None
+  Column 592: type=string, coverage=0.00, score=None
+  Column 593: type=string, coverage=0.00, score=None
+  Column 594: type=string, coverage=0.00, score=None
+  Column 595: type=string, coverage=0.00, score=None
+  Column 596: type=string, coverage=0.00, score=None
+  Column 597: type=string, coverage=0.00, score=None
+  Column 598: type=string, coverage=0.00, score=None
+  Column 599: type=string, coverage=0.00, score=None
+  Column 600: type=string, coverage=0.00, score=None
+  Column 601: type=string, coverage=0.00, score=None
+  Column 602: type=string, coverage=0.00, score=None
+  Column 603: type=string, coverage=0.00, score=None
+  Column 604: type=string, coverage=0.00, score=None
+  Column 605: type=string, coverage=0.00, score=None
+  Column 606: type=string, coverage=0.00, score=None
+  Column 607: type=string, coverage=0.00, score=None
+  Column 608: type=string, coverage=0.00, score=None
+  Column 609: type=string, coverage=0.00, score=None
+  Column 610: type=string, coverage=0.00, score=None
+  Column 611: type=string, coverage=0.00, score=None
+  Column 612: type=string, coverage=0.00, score=None
+  Column 613: type=string, coverage=0.00, score=None
+  Column 614: type=string, coverage=0.00, score=None
+  Column 615: type=string, coverage=0.00, score=None
+  Column 616: type=string, coverage=0.00, score=None
+  Column 617: type=string, coverage=0.00, score=None
+  Column 618: type=string, coverage=0.00, score=None
+  Column 619: type=string, coverage=0.00, score=None
+  Column 620: type=string, coverage=0.00, score=None
+  Column 621: type=string, coverage=0.00, score=None
+  Column 622: type=string, coverage=0.00, score=None
+  Column 623: type=string, coverage=0.00, score=None
+  Column 624: type=string, coverage=0.00, score=None
+  Column 625: type=string, coverage=0.00, score=None
+  Column 626: type=string, coverage=0.00, score=None
+  Column 627: type=string, coverage=0.00, score=None
+  Column 628: type=string, coverage=0.00, score=None
+  Column 629: type=string, coverage=0.00, score=None
+  Column 630: type=string, coverage=0.00, score=None
+  Column 631: type=string, coverage=0.00, score=None
+  Column 632: type=string, coverage=0.00, score=None
+  Column 633: type=string, coverage=0.00, score=None
+  Column 634: type=string, coverage=0.00, score=None
+  Column 635: type=string, coverage=0.00, score=None
+  Column 636: type=string, coverage=0.00, score=None
+  Column 637: type=string, coverage=0.00, score=None
+  Column 638: type=string, coverage=0.00, score=None
+  Column 639: type=string, coverage=0.00, score=None
+  Column 640: type=string, coverage=0.00, score=None
+  Column 641: type=string, coverage=0.00, score=None
+  Column 642: type=string, coverage=0.00, score=None
+  Column 643: type=string, coverage=0.00, score=None
+  Column 644: type=string, coverage=0.00, score=None
+  Column 645: type=string, coverage=0.00, score=None
+  Column 646: type=string, coverage=0.00, score=None
+  Column 647: type=string, coverage=0.00, score=None
+  Column 648: type=string, coverage=0.00, score=None
+  Column 649: type=string, coverage=0.00, score=None
+  Column 650: type=string, coverage=0.00, score=None
+  Column 651: type=string, coverage=0.00, score=None
+  Column 652: type=string, coverage=0.00, score=None
+  Column 653: type=string, coverage=0.00, score=None
+  Column 654: type=string, coverage=0.00, score=None
+  Column 655: type=string, coverage=0.00, score=None
+  Column 656: type=string, coverage=0.00, score=None
+  Column 657: type=string, coverage=0.00, score=None
+  Column 658: type=string, coverage=0.00, score=None
+  Column 659: type=string, coverage=0.00, score=None
+  Column 660: type=string, coverage=0.00, score=None
+  Column 661: type=string, coverage=0.00, score=None
+  Column 662: type=string, coverage=0.00, score=None
+  Column 663: type=string, coverage=0.00, score=None
+  Column 664: type=string, coverage=0.00, score=None
+  Column 665: type=string, coverage=0.00, score=None
+  Column 666: type=string, coverage=0.00, score=None
+  Column 667: type=string, coverage=0.00, score=None
+  Column 668: type=string, coverage=0.00, score=None
+  Column 669: type=string, coverage=0.00, score=None
+  Column 670: type=string, coverage=0.00, score=None
+  Column 671: type=string, coverage=0.00, score=None
+  Column 672: type=string, coverage=0.00, score=None
+  Column 673: type=string, coverage=0.00, score=None
+  Column 674: type=string, coverage=0.00, score=None
+  Column 675: type=string, coverage=0.00, score=None
+  Column 676: type=string, coverage=0.00, score=None
+  Column 677: type=string, coverage=0.00, score=None
+  Column 678: type=string, coverage=0.00, score=None
+  Column 679: type=string, coverage=0.00, score=None
+  Column 680: type=string, coverage=0.00, score=None
+  Column 681: type=string, coverage=0.00, score=None
+  Column 682: type=string, coverage=0.00, score=None
+  Column 683: type=string, coverage=0.00, score=None
+  Column 684: type=string, coverage=0.00, score=None
+  Column 685: type=string, coverage=0.00, score=None
+  Column 686: type=string, coverage=0.00, score=None
+  Column 687: type=string, coverage=0.00, score=None
+  Column 688: type=string, coverage=0.00, score=None
+  Column 689: type=string, coverage=0.00, score=None
+  Column 690: type=string, coverage=0.00, score=None
+  Column 691: type=string, coverage=0.00, score=None
+  Column 692: type=string, coverage=0.00, score=None
+  Column 693: type=string, coverage=0.00, score=None
+  Column 694: type=string, coverage=0.00, score=None
+  Column 695: type=string, coverage=0.00, score=None
+  Column 696: type=string, coverage=0.00, score=None
+  Column 697: type=string, coverage=0.00, score=None
+  Column 698: type=string, coverage=0.00, score=None
+  Column 699: type=string, coverage=0.00, score=None
+  Column 700: type=string, coverage=0.00, score=None
+  Column 701: type=string, coverage=0.00, score=None
+  Column 702: type=string, coverage=0.00, score=None
+  Column 703: type=string, coverage=0.00, score=None
+  Column 704: type=string, coverage=0.00, score=None
+  Column 705: type=string, coverage=0.00, score=None
+  Column 706: type=string, coverage=0.00, score=None
+  Column 707: type=string, coverage=0.00, score=None
+  Column 708: type=string, coverage=0.00, score=None
+  Column 709: type=string, coverage=0.00, score=None
+  Column 710: type=string, coverage=0.00, score=None
+  Column 711: type=string, coverage=0.00, score=None
+  Column 712: type=string, coverage=0.00, score=None
+  Column 713: type=string, coverage=0.00, score=None
+  Column 714: type=string, coverage=0.00, score=None
+  Column 715: type=string, coverage=0.00, score=None
+  Column 716: type=string, coverage=0.00, score=None
+  Column 717: type=string, coverage=0.00, score=None
+  Column 718: type=string, coverage=0.00, score=None
+  Column 719: type=string, coverage=0.00, score=None
+  Column 720: type=string, coverage=0.00, score=None
+  Column 721: type=string, coverage=0.00, score=None
+  Column 722: type=string, coverage=0.00, score=None
+  Column 723: type=string, coverage=0.00, score=None
+  Column 724: type=string, coverage=0.00, score=None
+  Column 725: type=string, coverage=0.00, score=None
+  Column 726: type=string, coverage=0.00, score=None
+  Column 727: type=string, coverage=0.00, score=None
+  Column 728: type=string, coverage=0.00, score=None
+  Column 729: type=string, coverage=0.00, score=None
+  Column 730: type=string, coverage=0.00, score=None
+  Column 731: type=string, coverage=0.00, score=None
+  Column 732: type=string, coverage=0.00, score=None
+  Column 733: type=string, coverage=0.00, score=None
+  Column 734: type=string, coverage=0.00, score=None
+  Column 735: type=string, coverage=0.00, score=None
+  Column 736: type=string, coverage=0.00, score=None
+  Column 737: type=string, coverage=0.00, score=None
+  Column 738: type=string, coverage=0.00, score=None
+  Column 739: type=string, coverage=0.00, score=None
+  Column 740: type=string, coverage=0.00, score=None
+  Column 741: type=string, coverage=0.00, score=None
+  Column 742: type=string, coverage=0.00, score=None
+  Column 743: type=string, coverage=0.00, score=None
+  Column 744: type=string, coverage=0.00, score=None
+  Column 745: type=string, coverage=0.00, score=None
+  Column 746: type=string, coverage=0.00, score=None
+  Column 747: type=string, coverage=0.00, score=None
+  Column 748: type=string, coverage=0.00, score=None
+  Column 749: type=string, coverage=0.00, score=None
+  Column 750: type=string, coverage=0.00, score=None
+  Column 751: type=string, coverage=0.00, score=None
+  Column 752: type=string, coverage=0.00, score=None
+  Column 753: type=string, coverage=0.00, score=None
+  Column 754: type=string, coverage=0.00, score=None
+  Column 755: type=string, coverage=0.00, score=None
+  Column 756: type=string, coverage=0.00, score=None
+  Column 757: type=string, coverage=0.00, score=None
+  Column 758: type=string, coverage=0.00, score=None
+  Column 759: type=string, coverage=0.00, score=None
+  Column 760: type=string, coverage=0.00, score=None
+  Column 761: type=string, coverage=0.00, score=None
+  Column 762: type=string, coverage=0.00, score=None
+  Column 763: type=string, coverage=0.00, score=None
+  Column 764: type=string, coverage=0.00, score=None
+  Column 765: type=string, coverage=0.00, score=None
+  Column 766: type=string, coverage=0.00, score=None
+  Column 767: type=string, coverage=0.00, score=None
+  Column 768: type=string, coverage=0.00, score=None
+  Column 769: type=string, coverage=0.00, score=None
+  Column 770: type=string, coverage=0.00, score=None
+  Column 771: type=string, coverage=0.00, score=None
+  Column 772: type=string, coverage=0.00, score=None
+  Column 773: type=string, coverage=0.00, score=None
+  Column 774: type=string, coverage=0.00, score=None
+  Column 775: type=string, coverage=0.00, score=None
+  Column 776: type=string, coverage=0.00, score=None
+  Column 777: type=string, coverage=0.00, score=None
+  Column 778: type=string, coverage=0.00, score=None
+  Column 779: type=string, coverage=0.00, score=None
+  Column 780: type=string, coverage=0.00, score=None
+  Column 781: type=string, coverage=0.00, score=None
+  Column 782: type=string, coverage=0.00, score=None
+  Column 783: type=string, coverage=0.00, score=None
+  Column 784: type=string, coverage=0.00, score=None
+  Column 785: type=string, coverage=0.00, score=None
+  Column 786: type=string, coverage=0.00, score=None
+  Column 787: type=string, coverage=0.00, score=None
+  Column 788: type=string, coverage=0.00, score=None
+  Column 789: type=string, coverage=0.00, score=None
+  Column 790: type=string, coverage=0.00, score=None
+  Column 791: type=string, coverage=0.00, score=None
+  Column 792: type=string, coverage=0.00, score=None
+  Column 793: type=string, coverage=0.00, score=None
+  Column 794: type=string, coverage=0.00, score=None
+  Column 795: type=string, coverage=0.00, score=None
+  Column 796: type=string, coverage=0.00, score=None
+  Column 797: type=string, coverage=0.00, score=None
+  Column 798: type=string, coverage=0.00, score=None
+  Column 799: type=string, coverage=0.00, score=None
+  Column 800: type=string, coverage=0.00, score=None
+  Column 801: type=string, coverage=0.00, score=None
+  Column 802: type=string, coverage=0.00, score=None
+  Column 803: type=string, coverage=0.00, score=None
+  Column 804: type=string, coverage=0.00, score=None
+  Column 805: type=string, coverage=0.00, score=None
+  Column 806: type=string, coverage=0.00, score=None
+  Column 807: type=string, coverage=0.00, score=None
+  Column 808: type=string, coverage=0.00, score=None
+  Column 809: type=string, coverage=0.00, score=None
+  Column 810: type=string, coverage=0.00, score=None
+  Column 811: type=string, coverage=0.00, score=None
+  Column 812: type=string, coverage=0.00, score=None
+  Column 813: type=string, coverage=0.00, score=None
+  Column 814: type=string, coverage=0.00, score=None
+  Column 815: type=string, coverage=0.00, score=None
+  Column 816: type=string, coverage=0.00, score=None
+  Column 817: type=string, coverage=0.00, score=None
+  Column 818: type=string, coverage=0.00, score=None
+  Column 819: type=string, coverage=0.00, score=None
+  Column 820: type=string, coverage=0.00, score=None
+  Column 821: type=string, coverage=0.00, score=None
+  Column 822: type=string, coverage=0.00, score=None
+  Column 823: type=string, coverage=0.00, score=None
+  Column 824: type=string, coverage=0.00, score=None
+  Column 825: type=string, coverage=0.00, score=None
+  Column 826: type=string, coverage=0.00, score=None
+  Column 827: type=string, coverage=0.00, score=None
+  Column 828: type=string, coverage=0.00, score=None
+  Column 829: type=string, coverage=0.00, score=None
+  Column 830: type=string, coverage=0.00, score=None
+  Column 831: type=string, coverage=0.00, score=None
+  Column 832: type=string, coverage=0.00, score=None
+  Column 833: type=string, coverage=0.00, score=None
+  Column 834: type=string, coverage=0.00, score=None
+  Column 835: type=string, coverage=0.00, score=None
+  Column 836: type=string, coverage=0.00, score=None
+  Column 837: type=string, coverage=0.00, score=None
+  Column 838: type=string, coverage=0.00, score=None
+  Column 839: type=string, coverage=0.00, score=None
+  Column 840: type=string, coverage=0.00, score=None
+  Column 841: type=string, coverage=0.00, score=None
+  Column 842: type=string, coverage=0.00, score=None
+  Column 843: type=string, coverage=0.00, score=None
+  Column 844: type=string, coverage=0.00, score=None
+  Column 845: type=string, coverage=0.00, score=None
+  Column 846: type=string, coverage=0.00, score=None
+  Column 847: type=string, coverage=0.00, score=None
+  Column 848: type=string, coverage=0.00, score=None
+  Column 849: type=string, coverage=0.00, score=None
+  Column 850: type=string, coverage=0.00, score=None
+  Column 851: type=string, coverage=0.00, score=None
+  Column 852: type=string, coverage=0.00, score=None
+  Column 853: type=string, coverage=0.00, score=None
+  Column 854: type=string, coverage=0.00, score=None
+  Column 855: type=string, coverage=0.00, score=None
+  Column 856: type=string, coverage=0.00, score=None
+  Column 857: type=string, coverage=0.00, score=None
+  Column 858: type=string, coverage=0.00, score=None
+  Column 859: type=string, coverage=0.00, score=None
+  Column 860: type=string, coverage=0.00, score=None
+  Column 861: type=string, coverage=0.00, score=None
+  Column 862: type=string, coverage=0.00, score=None
+  Column 863: type=string, coverage=0.00, score=None
+  Column 864: type=string, coverage=0.00, score=None
+  Column 865: type=string, coverage=0.00, score=None
+  Column 866: type=string, coverage=0.00, score=None
+  Column 867: type=string, coverage=0.00, score=None
+  Column 868: type=string, coverage=0.00, score=None
+  Column 869: type=string, coverage=0.00, score=None
+  Column 870: type=string, coverage=0.00, score=None
+  Column 871: type=string, coverage=0.00, score=None
+  Column 872: type=string, coverage=0.00, score=None
+  Column 873: type=string, coverage=0.00, score=None
+  Column 874: type=string, coverage=0.00, score=None
+  Column 875: type=string, coverage=0.00, score=None
+  Column 876: type=string, coverage=0.00, score=None
+  Column 877: type=string, coverage=0.00, score=None
+  Column 878: type=string, coverage=0.00, score=None
+  Column 879: type=string, coverage=0.00, score=None
+  Column 880: type=string, coverage=0.00, score=None
+  Column 881: type=string, coverage=0.00, score=None
+  Column 882: type=string, coverage=0.00, score=None
+  Column 883: type=string, coverage=0.00, score=None
+  Column 884: type=string, coverage=0.00, score=None
+  Column 885: type=string, coverage=0.00, score=None
+  Column 886: type=string, coverage=0.00, score=None
+  Column 887: type=string, coverage=0.00, score=None
+  Column 888: type=string, coverage=0.00, score=None
+  Column 889: type=string, coverage=0.00, score=None
+  Column 890: type=string, coverage=0.00, score=None
+  Column 891: type=string, coverage=0.00, score=None
+  Column 892: type=string, coverage=0.00, score=None
+  Column 893: type=string, coverage=0.00, score=None
+  Column 894: type=string, coverage=0.00, score=None
+  Column 895: type=string, coverage=0.00, score=None
+  Column 896: type=string, coverage=0.00, score=None
+  Column 897: type=string, coverage=0.00, score=None
+  Column 898: type=string, coverage=0.00, score=None
+  Column 899: type=string, coverage=0.00, score=None
+  Column 900: type=string, coverage=0.00, score=None
+  Column 901: type=string, coverage=0.00, score=None
+  Column 902: type=string, coverage=0.00, score=None
+  Column 903: type=string, coverage=0.00, score=None
+  Column 904: type=string, coverage=0.00, score=None
+  Column 905: type=string, coverage=0.00, score=None
+  Column 906: type=string, coverage=0.00, score=None
+  Column 907: type=string, coverage=0.00, score=None
+  Column 908: type=string, coverage=0.00, score=None
+  Column 909: type=string, coverage=0.00, score=None
+  Column 910: type=string, coverage=0.00, score=None
+  Column 911: type=string, coverage=0.00, score=None
+  Column 912: type=string, coverage=0.00, score=None
+  Column 913: type=string, coverage=0.00, score=None
+  Column 914: type=string, coverage=0.00, score=None
+  Column 915: type=string, coverage=0.00, score=None
+  Column 916: type=string, coverage=0.00, score=None
+  Column 917: type=string, coverage=0.00, score=None
+  Column 918: type=string, coverage=0.00, score=None
+  Column 919: type=string, coverage=0.00, score=None
+  Column 920: type=string, coverage=0.00, score=None
+  Column 921: type=string, coverage=0.00, score=None
+  Column 922: type=string, coverage=0.00, score=None
+  Column 923: type=string, coverage=0.00, score=None
+  Column 924: type=string, coverage=0.00, score=None
+  Column 925: type=string, coverage=0.00, score=None
+  Column 926: type=string, coverage=0.00, score=None
+  Column 927: type=string, coverage=0.00, score=None
+  Column 928: type=string, coverage=0.00, score=None
+  Column 929: type=string, coverage=0.00, score=None
+  Column 930: type=string, coverage=0.00, score=None
+  Column 931: type=string, coverage=0.00, score=None
+  Column 932: type=string, coverage=0.00, score=None
+  Column 933: type=string, coverage=0.00, score=None
+  Column 934: type=string, coverage=0.00, score=None
+  Column 935: type=string, coverage=0.00, score=None
+  Column 936: type=string, coverage=0.00, score=None
+  Column 937: type=string, coverage=0.00, score=None
+  Column 938: type=string, coverage=0.00, score=None
+  Column 939: type=string, coverage=0.00, score=None
+  Column 940: type=string, coverage=0.00, score=None
+  Column 941: type=string, coverage=0.00, score=None
+  Column 942: type=string, coverage=0.00, score=None
+  Column 943: type=string, coverage=0.00, score=None
+  Column 944: type=string, coverage=0.00, score=None
+  Column 945: type=string, coverage=0.00, score=None
+  Column 946: type=string, coverage=0.00, score=None
+  Column 947: type=string, coverage=0.00, score=None
+  Column 948: type=string, coverage=0.00, score=None
+  Column 949: type=string, coverage=0.00, score=None
+  Column 950: type=string, coverage=0.00, score=None
+  Column 951: type=string, coverage=0.00, score=None
+  Column 952: type=string, coverage=0.00, score=None
+  Column 953: type=string, coverage=0.00, score=None
+  Column 954: type=string, coverage=0.00, score=None
+  Column 955: type=string, coverage=0.00, score=None
+  Column 956: type=string, coverage=0.00, score=None
+  Column 957: type=string, coverage=0.00, score=None
+  Column 958: type=string, coverage=0.00, score=None
+  Column 959: type=string, coverage=0.00, score=None
+  Column 960: type=string, coverage=0.00, score=None
+  Column 961: type=string, coverage=0.00, score=None
+  Column 962: type=string, coverage=0.00, score=None
+  Column 963: type=string, coverage=0.00, score=None
+  Column 964: type=string, coverage=0.00, score=None
+  Column 965: type=string, coverage=0.00, score=None
+  Column 966: type=string, coverage=0.00, score=None
+  Column 967: type=string, coverage=0.00, score=None
+  Column 968: type=string, coverage=0.00, score=None
+  Column 969: type=string, coverage=0.00, score=None
+  Column 970: type=string, coverage=0.00, score=None
+  Column 971: type=string, coverage=0.00, score=None
+  Column 972: type=string, coverage=0.00, score=None
+  Column 973: type=string, coverage=0.00, score=None
+  Column 974: type=string, coverage=0.00, score=None
+  Column 975: type=string, coverage=0.00, score=None
+  Column 976: type=string, coverage=0.00, score=None
+  Column 977: type=string, coverage=0.00, score=None
+  Column 978: type=string, coverage=0.00, score=None
+  Column 979: type=string, coverage=0.00, score=None
+  Column 980: type=string, coverage=0.00, score=None
+  Column 981: type=string, coverage=0.00, score=None
+  Column 982: type=string, coverage=0.00, score=None
+  Column 983: type=string, coverage=0.00, score=None
+  Column 984: type=string, coverage=0.00, score=None
+  Column 985: type=string, coverage=0.00, score=None
+  Column 986: type=string, coverage=0.00, score=None
+  Column 987: type=string, coverage=0.00, score=None
+  Column 988: type=string, coverage=0.00, score=None
+  Column 989: type=string, coverage=0.00, score=None
+  Column 990: type=string, coverage=0.00, score=None
+  Column 991: type=string, coverage=0.00, score=None
+  Column 992: type=string, coverage=0.00, score=None
+  Column 993: type=string, coverage=0.00, score=None
+  Column 994: type=string, coverage=0.00, score=None
+  Column 995: type=string, coverage=0.00, score=None
+  Column 996: type=string, coverage=0.00, score=None
+
+Item 7:
+Gold: 
+Predicted: 
+Exact Match: ✔
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+
+Item 8:
+Gold: 
+Predicted: 
+Exact Match: ✔
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+
+Item 9:
+Gold: nation o-year sum-profit ALGERIA 1996 11105.9900 ALGERIA 1993 27503.6500 ARGENTINA 1993 1601.3290 CHINA 1995 679.0576 INDIA 1998 27530.8180 MOROCCO 1992 11032.4010 UNITED KINGDOM 1995 37885.6359 VIETNAM 1997 5705.0011 VIETNAM 1994 25866.4076
+Predicted: Nation Year Total_Profit CANADA 1998 0.00 CANADA 1997 0.00 CANADA 1996 0.00 CANADA 1995 0.00 CANADA 1994 0.00 CANADA 1993 0.00 CANADA 1992 0.00 FRANCE 1998 0.00 FRANCE 1997 0.00 FRANCE 1996 0.00 FRANCE 1995 0.00 FRANCE 1994 0.00 FRANCE 1993 0.00 FRANCE 1992 0.00 GERMANY 1998 0.00 GERMANY 1997 0.00 GERMANY 1996 0.00 GERMANY 1995 0.00 GERMANY 1994 0.00 GERMANY 1993 0.00 GERMANY 1992 0.00 IRAN 1998 0.00 IRAN 1997 0.00 IRAN 1996 0.00 IRAN 1995 0.00 IRAN 1994 0.00 IRAN 1993 0.00 IRAN 1992 0.00 IRAQ 1998 0.00 IRAQ 1997 0.00 IRAQ 1996 0.00 IRAQ 1995 0.00 IRAQ 1994 0.00 IRAQ 1993 0.00 IRAQ 1992 0.00 JAPAN 1998 0.00 JAPAN 1997 0.00 JAPAN 1996 0.00 JAPAN 1995 0.00 JAPAN 1994 0.00 JAPAN 1993 0.00 JAPAN 1992 0.00 RUSSIA 1998 0.00 RUSSIA 1997 0.00 RUSSIA 1996 0.00 RUSSIA 1995 0.00 RUSSIA 1994 0.00 RUSSIA 1993 0.00 RUSSIA 1992 0.00 SAUDI ARABIA 1998 0.00 SAUDI ARABIA 1997 0.00 SAUDI ARABIA 1996 0.00 SAUDI ARABIA 1995 0.00 SAUDI ARABIA 1994 0.00 SAUDI ARABIA 1993 0.00 SAUDI ARABIA 1992 0.00 UNITED KINGDOM 1998 0.00 UNITED KINGDOM 1997 0.00 UNITED KINGDOM 1996 0.00 UNITED KINGDOM 1995 0.00 UNITED KINGDOM 1994 0.00 UNITED KINGDOM 1993 0.00 UNITED KINGDOM 1992 0.00 UNITED STATES 1998 0.00 UNITED STATES 1997 0.00 UNITED STATES 1996 0.00 UNITED STATES 1995 0.00 UNITED STATES 1994 0.00 UNITED STATES 1993 0.00 UNITED STATES 1992 0.00 VIETNAM 1998 0.00 VIETNAM 1997 0.00 VIETNAM 1996 0.00 VIETNAM 1995 0.00 VIETNAM 1994 0.00 VIETNAM 1993 0.00 VIETNAM 1992 0.00
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0769
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=1.00, score=0.8991181657848324
+  Column 1: type=numeric, coverage=1.00, score=None
+  Column 2: type=numeric, coverage=1.00, score=9493.249511111111
+
+Item 10:
+Gold: c-custkey c-name revenue c-acctbal n-name c-address c-phone c-comment 4220 Customer#000004220 135761.4871 -412.05 ETHIOPIA LvfPs5JphrpkgUR uqHQwCdtyB4YyAAtZj 15-619-483-6403 cajole above the platelets. bold requests are above t 2290 Customer#000002290 69483.2396 -395.19 ALGERIA XfbflRY4j48N8YI FwdiIN5Yp4R2XU183f7S6FY0 10-907-437-9925 ully. unusual requests are unusual, special requests. furiously express packages 3865 Customer#000003865 55960.9296 8668.08 INDONESIA bVjIVSjh7h2INicRVb1rKG6xksF 19-836-789-5707 forges haggle furiously. slyly express accou 5821 Customer#000005821 43352.9460 9085.60 GERMANY 92xQQEPTQT0E5tfqrgPvQ6c 17-143-417-4083 have to haggle after the final, bold excuses. fluffily unusual instructions boost. carefull 911 Customer#000000911 6950.7840 6364.60 JORDAN VS0fia,lJ RvUf68 l4Unv,Vx 23-121-746-7339 gular foxes! permanently regular packages wake. quickly regular deposits detect blithely. carefully express 2080 Customer#000002080 5208.3840 6700.49 IRAN fPmA BjHaeWUbUpNBm 20-588-868-3463 deposits kindle furiously. car
+Predicted: 
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=0.00, score=None
+  Column 1: type=string, coverage=0.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+  Column 4: type=string, coverage=0.00, score=None
+  Column 5: type=string, coverage=0.00, score=None
+  Column 6: type=string, coverage=0.00, score=None
+  Column 7: type=string, coverage=0.00, score=None
+
+Item 11:
+Gold: ps-partkey value 1576 9476875.85 1774 9290783.40 949 9058378.56 739 8682336.04 887 8245715.88 1381 8139564.81 1732 8117775.10 509 7917730.69 1646 7654272.00 1624 7572760.38 1882 7544963.52 1043 7434069.04 156 7186005.32 2324 6980548.96 548 6871208.20 101 6781216.45 771 6627096.34 1085 6588513.87 358 6528607.12 141 6392874.24 1356 6349557.25 1983 6318529.28 2394 6284702.52 2147 6267475.32 404 6244981.08 128 6150602.94 730 6100067.88 1144 6012205.92 2405 5991485.69 407 5880580.56 479 5876236.80 610 5788177.30 2140 5784403.44 371 5721100.44 1079 5717182.89 718 5686416.80 657 5685252.30 62 5659470.16 2334 5652591.96 1065 5623735.00 993 5621670.51 849 5583516.45 1521 5571972.19 1425 5570919.90 1140 5563512.68 1321 5505359.90 1738 5504138.68 2383 5438136.12 1788 5430901.95 1265 5419140.30 1586 5411198.55 2417 5408261.64 1915 5396458.68 1608 5353853.92 526 5350481.57 2235 5256017.74 1793 5135589.12 975 5078714.39 1577 5013054.36 912 4989253.50 1292 4972435.20 2419 4945044.65 1616 4939951.26 1887 4934262.24 1122 4909175.70 2316 4903717.30 2130 4802866.20 934 4792495.97 669 4791760.48 324 4726519.14 1439 4662494.55 2373 4627891.80 1008 4565588.85 388 4513261.12 798 4490152.47 1195 4478574.52 2241 4435638.62 1908 4417931.80 2133 4360104.54 614 4356657.45 1896 4300176.60 749 4292271.27 603 4231905.17 364 4203891.12 1490 4152274.20 89 4139194.84 1394 4122729.33 202 4069566.34 1890 4053270.25 596 4049942.49 786 3945479.68 1609 3934616.00 1327 3879151.64 576 3860007.79 878 3843635.20 1687 3814484.56 2422 3805237.70 1911 3799116.96 760 3797053.09 1159 3761503.31 422 3749809.28 764 3734931.03 1219 3715775.28 779 3559597.53 1460 3552483.75 1458 3461367.79 1713 3429613.08 2358 3387171.10 550 3350293.72 868 3345379.03 590 3326204.38 619 3213283.64 1831 3195939.74 1762 3115830.15 2186 3088644.20 48 3087580.32 792 3072789.02 2132 3066367.29 1287 2985392.48 1620 2960673.25 1711 2927134.35 1984 2907345.36 396 2864622.40 625 2859391.92 1786 2837162.40 96 2823364.60 711 2777050.64 1136 2774380.95 1505 2766157.98 203 2761439.88 140 2760862.85 1367 2752801.74 2470 2745506.25 1154 2725811.84 1007 2703691.04 2177 2679665.20 2455 2657177.90 2304 2638413.78 2027 2583925.23 1487 2575461.14 1500 2565333.91 1231 2534795.40 81 2509847.95 2243 2498356.30 2475 2498208.59 1564 2465310.70 1529 2454098.39 626 2431311.95 1474 2420271.47 15 2410310.85 1399 2397769.25 417 2356450.95 2150 2356137.18 941 2328664.96 1633 2310093.00 2165 2298341.06 2129 2288584.32 2464 2261055.70 2102 2248213.00 83 2243985.10 773 2207043.18 2074 2194695.55 1084 2150873.70 1486 2136442.65 1385 2119936.40 286 2110803.59 1070 2107247.44 2234 2030637.33 1813 1972487.07 2194 1944757.92 57 1940708.68 1605 1936405.80 565 1933875.72 976 1933066.80 2153 1933013.85 1429 1914543.71 2360 1903679.73 375 1895978.04 616 1862823.36 1690 1845150.38 1883 1837209.19 2168 1762983.14 114 1730189.53 54 1726572.65 1939 1725348.90 457 1709056.20 500 1694491.08 1309 1680562.40 2317 1675845.03 1400 1639223.30 1875 1611927.00 1424 1586378.68 107 1585937.46 1664 1584190.39 2093 1576987.20 1328 1576190.25 1041 1565200.40 2462 1552910.28 45 1549576.55 572 1533844.24 1077 1527658.80 892 1491389.25 1812 1488518.12 1150 1484060.16 1089 1477486.65 832 1470954.92 710 1460324.72 913 1458848.04 856 1427162.24 1172 1422673.40 437 1395921.24 1757 1386564.26 430 1372638.96 2286 1345438.08 2399 1344881.60 1932 1316308.00 1412 1286850.00 877 1266218.00 1851 1262823.25 34 1259957.19 227 1235815.68 865 1234995.23 1076 1226298.17 1480 1213330.32 1211 1212967.68 627 1211248.48 638 1206333.60 483 1200826.56 233 1200073.81 317 1179928.00 1132 1131338.88 1254 1123590.00 2183 1111783.88 1203 1099471.10 1319 1098858.15 1900 1072724.48 854 1023710.50 556 1017791.04 112 988030.68 1206 940901.85 2148 922919.04 63 899907.36 228 892310.20 1111 867387.43 2157 862828.16 962 846619.25 1772 840803.25 447 840189.33 427 839771.02 2363 836113.76 224 826777.14 2188 815837.04 2040 800718.20 1494 790400.36 1298 779175.60 2345 778411.80 925 776796.48 2270 773278.00 1476 765310.00 870 754710.64 1717 749256.27 2246 747345.96 18 747191.25 2382 742146.24 1446 739115.01 587 738768.56 1199 702243.08 1004 692481.36 1380 688413.84 1953 656032.00 267 640733.03 84 639116.31 2429 631750.08 194 626466.00 508 624215.95 1619 604778.23 9 593946.80 23 591863.07 843 589964.55 2347 537288.96 1246 537201.64 1134 535616.64 1148 515702.16 1963 512660.64 580 501016.70 1602 498605.38 320 489737.62 1257 484943.10 265 475559.04 537 475198.20 963 471600.36 844 461274.60 474 455889.28 1361 453672.68 285 446237.88 2185 443088.36 312 435163.84 1836 425946.56 713 409772.48 2142 406444.78 706 392540.80 1502 392321.50 1781 391609.05 546 387720.00 2207 381162.60 1499 370180.80 1516 370163.04 1947 342099.34 1825 336164.30 1228 333591.63 1420 331896.90 958 328901.38 594 315583.24 1116 290384.50 1074 280003.64 206 263061.92 1503 261244.89 2318 257520.55 1123 256027.10 443 248462.31 751 247819.25 1816 244463.13 1960 239649.93 440 227708.73 1835 221006.10 1658 208262.30 1388 197340.08 2191 178637.64 1338 172179.50 1645 158172.49 1457 158150.94 2112 157942.30 2312 153094.40 589 148200.37 1611 139161.24 2229 120358.26 37 111816.36 151 110222.90 1565 109088.00 1419 100841.79
+Predicted: 
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=numeric, coverage=0.00, score=None
+  Column 1: type=numeric, coverage=0.00, score=None
+
+Item 12:
+Gold: l-shipmode high-line-count low-line-count FOB 7 6 MAIL 13 16
+Predicted: FOB 0 1 MAIL 0 0
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.2667
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=1.00, score=0.0
+  Column 1: type=numeric, coverage=1.00, score=10.0
+  Column 2: type=numeric, coverage=1.00, score=10.5
+
+Item 13:
+Gold: c-count custdist 0 9355 1 623 2 21 3 1
+Predicted: 0 102 1 37 2 12 3 5 4 1
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.4000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=numeric, coverage=1.00, score=0.0
+  Column 1: type=numeric, coverage=1.00, score=2463.0
+
+Item 14:
+Gold: promo-revenue 0.000000000000000000000000
+Predicted: Revenue_Total Promo_Revenue Percentage 0.00 0.00 0.00
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=1.00, score=1.0
+  Column 1: type=numeric, coverage=1.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+  Column 4: type=string, coverage=0.00, score=None
+  Column 5: type=string, coverage=0.00, score=None
+
+Item 15:
+Gold: 9871 Supplier#000009871 xTocQE8vq8YkkBzCx7 z8b8 19-125-786-9743 164768.3151
+Predicted: Supplier Revenue 8712 1204.04
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=numeric, coverage=0.00, score=None
+  Column 1: type=string, coverage=0.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+  Column 4: type=string, coverage=0.00, score=None
+  Column 5: type=numeric, coverage=0.00, score=None
+
+Item 16:
+Gold: Brand p-type p-size p-container Brand#14 PROMO BRUSHED STEEL 9 8 Brand#23 PROMO BRUSHED NICKEL 34 8 Brand#35 SMALL PLATED COPPER 38 8 Brand#35 SMALL POLISHED COPPER 14 8 Brand#54 STANDARD BURNISHED BRASS 43 8 Brand#11 ECONOMY BRUSHED STEEL 34 4 Brand#11 ECONOMY BURNISHED TIN 38 4 Brand#11 ECONOMY POLISHED STEEL 41 4 Brand#11 LARGE BRUSHED COPPER 41 4 Brand#11 LARGE BRUSHED TIN 14 4 Brand#11 SMALL POLISHED NICKEL 38 4 Brand#11 STANDARD ANODIZED NICKEL 38 4 Brand#12 ECONOMY ANODIZED COPPER 43 4 Brand#12 ECONOMY BRUSHED COPPER 34 4 Brand#12 ECONOMY BURNISHED BRASS 41 4 Brand#12 MEDIUM PLATED BRASS 23 4 Brand#12 PROMO ANODIZED COPPER 41 4 Brand#12 PROMO BRUSHED COPPER 14 4 Brand#12 PROMO BRUSHED STEEL 34 4 Brand#12 PROMO PLATED NICKEL 41 4 Brand#12 SMALL ANODIZED COPPER 23 4 Brand#12 SMALL PLATED STEEL 7 4 Brand#12 SMALL POLISHED NICKEL 7 4 Brand#12 STANDARD BURNISHED TIN 23 4 Brand#12 STANDARD PLATED TIN 9 4 Brand#12 STANDARD PLATED TIN 41 4 Brand#12 STANDARD POLISHED TIN 14 4 Brand#13 ECONOMY BRUSHED BRASS 7 4 Brand#13 ECONOMY PLATED STEEL 23 4 Brand#13 ECONOMY POLISHED BRASS 9 4 Brand#13 ECONOMY POLISHED COPPER 9 4 Brand#13 MEDIUM PLATED BRASS 38 4 Brand#13 MEDIUM PLATED STEEL 38 4 Brand#13 MEDIUM POLISHED STEEL 14 4 Brand#13 MEDIUM POLISHED STEEL 43 4 Brand#13 PROMO BURNISHED COPPER 7 4 Brand#13 STANDARD BRUSHED STEEL 7 4 Brand#13 STANDARD PLATED STEEL 38 4 Brand#13 STANDARD PLATED TIN 34 4 Brand#14 ECONOMY BURNISHED TIN 23 4 Brand#14 ECONOMY PLATED TIN 9 4 Brand#14 ECONOMY POLISHED COPPER 41 4 Brand#14 LARGE ANODIZED NICKEL 9 4 Brand#14 LARGE BRUSHED NICKEL 7 4 Brand#14 MEDIUM PLATED NICKEL 7 4 Brand#14 PROMO ANODIZED COPPER 41 4 Brand#14 PROMO BURNISHED BRASS 41 4 Brand#14 SMALL BURNISHED COPPER 14 4 Brand#14 SMALL BURNISHED TIN 23 4 Brand#14 SMALL POLISHED TIN 7 4 Brand#14 STANDARD ANODIZED NICKEL 14 4 Brand#14 STANDARD BRUSHED COPPER 41 4 Brand#14 STANDARD POLISHED BRASS 43 4 Brand#14 STANDARD POLISHED STEEL 7 4 Brand#14 STANDARD POLISHED TIN 38 4 Brand#15 ECONOMY BURNISHED BRASS 14 4 Brand#15 LARGE BURNISHED STEEL 41 4 Brand#15 LARGE BURNISHED TIN 34 4 Brand#15 LARGE POLISHED STEEL 34 4 Brand#15 MEDIUM ANODIZED COPPER 9 4 Brand#15 MEDIUM PLATED STEEL 41 4 Brand#15 MEDIUM PLATED TIN 9 4 Brand#15 MEDIUM POLISHED BRASS 34 4 Brand#15 MEDIUM POLISHED TIN 7 4 Brand#15 PROMO ANODIZED STEEL 14 4 Brand#15 PROMO POLISHED TIN 43 4 Brand#15 SMALL BURNISHED COPPER 14 4 Brand#15 SMALL BURNISHED TIN 23 4 Brand#15 STANDARD BRUSHED NICKEL 41 4 Brand#15 STANDARD POLISHED STEEL 34 4 Brand#21 ECONOMY PLATED BRASS 38 4 Brand#21 ECONOMY PLATED BRASS 41 4 Brand#21 ECONOMY PLATED TIN 34 4 Brand#21 LARGE BRUSHED BRASS 38 4 Brand#21 LARGE POLISHED STEEL 41 4 Brand#21 MEDIUM ANODIZED TIN 9 4 Brand#21 MEDIUM BRUSHED STEEL 34 4 Brand#21 MEDIUM BURNISHED STEEL 23 4 Brand#21 PROMO BRUSHED STEEL 23 4 Brand#21 PROMO BURNISHED COPPER 7 4 Brand#21 SMALL ANODIZED NICKEL 38 4 Brand#21 SMALL ANODIZED STEEL 34 4 Brand#21 STANDARD BRUSHED STEEL 41 4 Brand#21 STANDARD BRUSHED STEEL 43 4 Brand#21 STANDARD PLATED STEEL 43 4 Brand#21 STANDARD POLISHED TIN 7 4 Brand#22 ECONOMY BRUSHED BRASS 14 4 Brand#22 LARGE ANODIZED BRASS 41 4 Brand#22 LARGE BRUSHED COPPER 34 4 Brand#22 LARGE BRUSHED STEEL 34 4 Brand#22 LARGE BURNISHED STEEL 7 4 Brand#22 LARGE BURNISHED STEEL 23 4 Brand#22 MEDIUM ANODIZED TIN 7 4 Brand#22 MEDIUM ANODIZED TIN 9 4 Brand#22 MEDIUM BRUSHED BRASS 14 4 Brand#22 MEDIUM BURNISHED TIN 23 4 Brand#22 MEDIUM PLATED COPPER 7 4 Brand#22 PROMO ANODIZED NICKEL 41 4 Brand#22 PROMO BRUSHED BRASS 9 4 Brand#22 PROMO BRUSHED COPPER 38 4 Brand#22 PROMO BURNISHED BRASS 7 4 Brand#22 PROMO POLISHED BRASS 7 4 Brand#22 SMALL BURNISHED STEEL 23 4 Brand#22 SMALL POLISHED COPPER 38 4 Brand#22 STANDARD ANODIZED NICKEL 34 4 Brand#22 STANDARD BRUSHED TIN 34 4 Brand#23 ECONOMY ANODIZED TIN 7 4 Brand#23 ECONOMY BRUSHED COPPER 9 4 Brand#23 ECONOMY BURNISHED BRASS 34 4 Brand#23 ECONOMY PLATED COPPER 14 4 Brand#23 ECONOMY PLATED TIN 38 4 Brand#23 LARGE ANODIZED COPPER 14 4 Brand#23 LARGE POLISHED STEEL 7 4 Brand#23 PROMO BURNISHED COPPER 14 4 Brand#23 PROMO POLISHED BRASS 14 4 Brand#23 SMALL BURNISHED BRASS 41 4 Brand#23 SMALL POLISHED BRASS 9 4 Brand#23 STANDARD ANODIZED NICKEL 34 4 Brand#23 STANDARD PLATED BRASS 9 4 Brand#23 STANDARD PLATED COPPER 7 4 Brand#24 ECONOMY BURNISHED BRASS 34 4 Brand#24 ECONOMY POLISHED NICKEL 38 4 Brand#24 LARGE ANODIZED NICKEL 38 4 Brand#24 LARGE POLISHED BRASS 41 4 Brand#24 LARGE POLISHED COPPER 9 4 Brand#24 MEDIUM POLISHED BRASS 9 4 Brand#24 PROMO BRUSHED STEEL 7 4 Brand#24 PROMO PLATED STEEL 38 4 Brand#24 PROMO POLISHED BRASS 14 4 Brand#24 STANDARD BRUSHED BRASS 14 4 Brand#24 STANDARD BRUSHED STEEL 14 4 Brand#24 STANDARD BRUSHED TIN 38 4 Brand#24 STANDARD POLISHED NICKEL 14 4 Brand#25 ECONOMY PLATED NICKEL 23 4 Brand#25 ECONOMY POLISHED STEEL 41 4 Brand#25 LARGE ANODIZED NICKEL 23 4 Brand#25 LARGE BRUSHED TIN 7 4 Brand#25 MEDIUM BURNISHED COPPER 38 4 Brand#25 MEDIUM PLATED COPPER 7 4 Brand#25 MEDIUM PLATED COPPER 41 4 Brand#25 MEDIUM PLATED STEEL 9 4 Brand#25 PROMO ANODIZED STEEL 38 4 Brand#25 SMALL POLISHED STEEL 34 4 Brand#25 STANDARD ANODIZED COPPER 41 4 Brand#25 STANDARD ANODIZED TIN 9 4 Brand#25 STANDARD BURNISHED NICKEL 43 4 Brand#25 STANDARD PLATED TIN 43 4 Brand#31 ECONOMY BRUSHED TIN 43 4 Brand#31 ECONOMY PLATED STEEL 23 4 Brand#31 ECONOMY POLISHED TIN 41 4 Brand#31 LARGE BRUSHED BRASS 34 4 Brand#31 MEDIUM ANODIZED NICKEL 38 4 Brand#31 PROMO ANODIZED NICKEL 9 4 Brand#31 PROMO BRUSHED NICKEL 34 4 Brand#31 PROMO PLATED STEEL 34 4 Brand#31 PROMO PLATED STEEL 38 4 Brand#31 PROMO POLISHED TIN 23 4 Brand#31 SMALL ANODIZED NICKEL 9 4 Brand#31 SMALL BRUSHED NICKEL 23 4 Brand#31 STANDARD BRUSHED STEEL 23 4 Brand#31 STANDARD BRUSHED TIN 41 4 Brand#31 STANDARD PLATED TIN 38 4 Brand#32 ECONOMY BURNISHED NICKEL 38 4 Brand#32 ECONOMY PLATED COPPER 9 4 Brand#32 LARGE ANODIZED COPPER 7 4 Brand#32 LARGE ANODIZED STEEL 14 4 Brand#32 LARGE POLISHED STEEL 43 4 Brand#32 MEDIUM ANODIZED NICKEL 43 4 Brand#32 MEDIUM BRUSHED STEEL 7 4 Brand#32 MEDIUM BURNISHED BRASS 9 4 Brand#32 MEDIUM POLISHED BRASS 9 4 Brand#32 PROMO BRUSHED NICKEL 14 4 Brand#32 PROMO BRUSHED STEEL 23 4 Brand#32 PROMO BURNISHED STEEL 43 4 Brand#32 PROMO PLATED COPPER 43 4 Brand#32 SMALL ANODIZED TIN 9 4 Brand#32 SMALL PLATED TIN 23 4 Brand#32 STANDARD POLISHED NICKEL 43 4 Brand#33 ECONOMY ANODIZED COPPER 41 4 Brand#33 ECONOMY BURNISHED COPPER 14 4 Brand#33 ECONOMY PLATED STEEL 34 4 Brand#33 ECONOMY POLISHED BRASS 14 4 Brand#33 LARGE ANODIZED TIN 7 4 Brand#33 MEDIUM BURNISHED COPPER 14 4 Brand#33 MEDIUM POLISHED STEEL 38 4 Brand#33 PROMO ANODIZED STEEL 7 4 Brand#33 PROMO ANODIZED TIN 41 4 Brand#33 PROMO BURNISHED NICKEL 34 4 Brand#33 PROMO BURNISHED TIN 23 4 Brand#33 PROMO PLATED COPPER 7 4 Brand#33 PROMO POLISHED STEEL 9 4 Brand#33 SMALL ANODIZED COPPER 23 4 Brand#33 SMALL PLATED COPPER 7 4 Brand#33 SMALL POLISHED NICKEL 34 4 Brand#33 STANDARD BURNISHED BRASS 43 4 Brand#33 STANDARD BURNISHED NICKEL 7 4 Brand#34 ECONOMY ANODIZED COPPER 41 4 Brand#34 ECONOMY ANODIZED TIN 7 4 Brand#34 ECONOMY PLATED BRASS 41 4 Brand#34 LARGE ANODIZED BRASS 23 4 Brand#34 LARGE BRUSHED COPPER 23 4 Brand#34 MEDIUM ANODIZED STEEL 34 4 Brand#34 MEDIUM BRUSHED COPPER 9 4 Brand#34 MEDIUM BRUSHED TIN 14 4 Brand#34 MEDIUM POLISHED COPPER 38 4 Brand#34 MEDIUM POLISHED NICKEL 43 4 Brand#34 PROMO BRUSHED BRASS 23 4 Brand#34 PROMO BURNISHED COPPER 34 4 Brand#34 PROMO BURNISHED NICKEL 34 4 Brand#34 PROMO BURNISHED TIN 43 4 Brand#34 SMALL ANODIZED STEEL 23 4 Brand#34 SMALL BRUSHED TIN 9 4 Brand#34 SMALL BURNISHED COPPER 7 4 Brand#34 SMALL PLATED BRASS 14 4 Brand#34 SMALL POLISHED NICKEL 41 4 Brand#34 STANDARD BRUSHED BRASS 23 4 Brand#34 STANDARD BURNISHED TIN 23 4 Brand#35 LARGE BURNISHED STEEL 38 4 Brand#35 PROMO ANODIZED NICKEL 7 4 Brand#35 PROMO BURNISHED STEEL 14 4 Brand#35 PROMO POLISHED COPPER 38 4 Brand#35 PROMO POLISHED TIN 7 4 Brand#35 SMALL ANODIZED NICKEL 34 4 Brand#35 SMALL ANODIZED STEEL 7 4 Brand#35 SMALL ANODIZED STEEL 43 4 Brand#35 SMALL BURNISHED TIN 43 4 Brand#35 STANDARD ANODIZED NICKEL 14 4 Brand#35 STANDARD ANODIZED NICKEL 34 4 Brand#35 STANDARD ANODIZED STEEL 23 4 Brand#35 STANDARD PLATED STEEL 14 4 Brand#35 STANDARD POLISHED COPPER 7 4 Brand#41 ECONOMY PLATED STEEL 43 4 Brand#41 MEDIUM ANODIZED NICKEL 9 4 Brand#41 MEDIUM BRUSHED TIN 9 4 Brand#41 MEDIUM POLISHED BRASS 14 4 Brand#41 PROMO ANODIZED NICKEL 9 4 Brand#41 PROMO BRUSHED NICKEL 43 4 Brand#41 PROMO POLISHED BRASS 34 4 Brand#41 PROMO POLISHED COPPER 34 4 Brand#41 PROMO POLISHED NICKEL 38 4 Brand#41 SMALL BRUSHED STEEL 34 4 Brand#41 SMALL POLISHED COPPER 14 4 Brand#41 STANDARD ANODIZED NICKEL
+Predicted: 
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=0.00, score=None
+  Column 1: type=string, coverage=0.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+
+Item 17:
+Gold: 
+Predicted: 
+Exact Match: ✔
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+
+Item 18:
+Gold: 
+Predicted: 
+Exact Match: ✔
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+
+Item 19:
+Gold: 
+Predicted: 
+Exact Match: ✔
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+
+Item 20:
+Gold: s-name s-address Supplier#000006537 NSZmLpbFozfkiHwCGXYd8Dua7ioULg
+Predicted: 
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=string, coverage=0.00, score=None
+  Column 1: type=string, coverage=0.00, score=None
+
+Item 21:
+Gold: 25
+Predicted: 24
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): 1.0
+RMSE component (sq error): 1.0
+Abs Distance: 1.0
+Rel Distance: 0.0399999999984
+Column Evaluation:
+  Column 0: type=numeric, coverage=1.00, score=1.0
+
+Item 22:
+Gold: 5
+Predicted: 0 AFRICA 1 AMERICA 2 ASIA 3 4 MIDDLE EAST
+Exact Match: ✘
+Numeric Match: ✘
+Token-level F1: 0.0000
+MAE (abs error): None
+RMSE component (sq error): None
+Abs Distance: None
+Rel Distance: None
+Column Evaluation:
+  Column 0: type=numeric, coverage=1.00, score=5.0
+  Column 1: type=string, coverage=0.00, score=None
+  Column 2: type=string, coverage=0.00, score=None
+  Column 3: type=string, coverage=0.00, score=None
+  Column 4: type=string, coverage=0.00, score=None
+  Column 5: type=string, coverage=0.00, score=None
+  Column 6: type=string, coverage=0.00, score=None
+  Column 7: type=string, coverage=0.00, score=None
+  Column 8: type=string, coverage=0.00, score=None
+  Column 9: type=string, coverage=0.00, score=None
+
