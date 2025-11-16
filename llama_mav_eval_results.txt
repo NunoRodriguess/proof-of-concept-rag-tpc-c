@@ -9,14 +9,16 @@ RMSE component (sq error): None
 Abs Distance: None
 Rel Distance: None
 Column Evaluation:
-  Column 0: type=numeric, coverage=0.20, score=None
-  Column 1: type=numeric, coverage=0.20, score=None
-  Column 2: type=numeric, coverage=0.20, score=None
-  Column 3: type=numeric, coverage=0.20, score=None
-  Column 4: type=numeric, coverage=0.20, score=244778.40999999997
-  Column 5: type=numeric, coverage=0.20, score=92372101.47
-  Column 6: type=numeric, coverage=0.20, score=87686957.5615
-  Column 7: type=numeric, coverage=0.20, score=91167578.97422999
+  Column 0: type=string, coverage=0.00, score=None
+  Column 1: type=string, coverage=0.00, score=None
+  Column 2: type=numeric, coverage=0.00, score=None
+  Column 3: type=numeric, coverage=0.00, score=None
+  Column 4: type=numeric, coverage=0.00, score=None
+  Column 5: type=numeric, coverage=0.00, score=None
+  Column 6: type=numeric, coverage=0.00, score=None
+  Column 7: type=numeric, coverage=0.00, score=None
+  Column 8: type=numeric, coverage=0.00, score=None
+  Column 9: type=numeric, coverage=0.00, score=None
 
 Item 2:
 Gold: s-acctbal s-name n-name p-partkey p-mfgr s-address s-phone s-comment 7841.05 Supplier#000005954 INDONESIA 953 Manufacturer#4 wOwcbbHNV2p,Glt8SijFnE9ZLcTbnhESeLvyFN 19-145-589-1532 fully regular foxes nag carefully! even ideas cajole permanently special deposits. carefull 7550.40 Supplier#000000776 VIETNAM 775 Manufacturer#1 nklfFoSkCwf,ooSuF 31-317-593-4029 es haggle instructions. bravely furious deposits haggle blithely. quickly regular water 7325.13 Supplier#000007934 INDONESIA 433 Manufacturer#1 V4mz6vAwVGH6j3izJ,dw8DnqWu3FN 19-825-315-2126 furiously unusual courts u 7035.97 Supplier#000005017 INDIA 16 Manufacturer#3 RMaCRF8C,C3 18-252-308-7859 nal dolphins. fluffily ironic accounts eat final requests. unusual packages are carefu 6967.02 Supplier#000002885 JAPAN 384 Manufacturer#4 7wgc,Ccw1HNHeJZSWhmubwW,HK1Yy8ADe 22-492-408-3593 posits cajole. furiously i 4515.80 Supplier#000000060 INDIA 59 Manufacturer#5 cb08ntDTARo47WmnBcYXu 18-550-360-2464 thely express ideas use blithely 3978.33 Supplier#000006229 INDONESIA 1228 Manufacturer#3 xBtJZwxIvrC 19-453-638-3838 . furiously even instructions haggle. permanently special deposits are slyly. fin 1103.22 Supplier#000004155 CHINA 1654 Manufacturer#2 1kFL1WiHShkArhTmnzyE2x4QLO 28-897-120-9617 posits sleep quickly at the instructions. carefully final excuses sleep. bold, special pack 1085.89 Supplier#000002757 INDONESIA 256 Manufacturer#3 CaERkgKvPpr4LVD7voAskre1t8mzOHd 47mHT 19-959-961-5223 ggle blithely. regular accounts 1072.26 Supplier#000002594 INDONESIA 93 Manufacturer#2 BJdtygY30B7X6fqO4iCQukCWuseKiUkdTKC9aIhe 19-468-860-7708 sly slow depths cajole fluffily. final acco 276.72 Supplier#000009323 JAPAN 1822 Manufacturer#3 xQzxixcS9G30QYFoAsEiB ph2eQkiCyUwsYc7y 22-230-852-1667 final, regular foxes wake slyly express, bold pinto beans. ironic pinto beans wake slyly
@@ -149,7 +151,7 @@ RMSE component (sq error): None
 Abs Distance: None
 Rel Distance: None
 Column Evaluation:
-  Column 0: type=string, coverage=0.44, score=0.7801587301587302
+  Column 0: type=string, coverage=0.44, score=0.78015873015873
   Column 1: type=numeric, coverage=0.44, score=3.25
   Column 2: type=numeric, coverage=0.44, score=9832.31335
 
@@ -240,7 +242,7 @@ RMSE component (sq error): None
 Abs Distance: None
 Rel Distance: None
 Column Evaluation:
-  Column 0: type=numeric, coverage=1.00, score=7871.0
+  Column 0: type=numeric, coverage=0.00, score=None
   Column 1: type=string, coverage=0.00, score=None
   Column 2: type=string, coverage=0.00, score=None
   Column 3: type=string, coverage=0.00, score=None
